@@ -1,0 +1,60 @@
+.bg-header-top-search {
+  background: url("/img/search/search_bg.jpg") no-repeat;
+  background-position: 69% 50%;
+  background-size: cover;
+  @extend .transition-all;
+  @include breakpoint($small-min) {
+    background-position: 60% 50%;
+  }
+}
+/***********************************************
+TXT
+***********************************************/
+.t-search{
+  color: $color-hover-menu;
+}
+.sear-txt{
+  margin-top: 15px;
+  color: $color-primary;
+  font-size: 17px;
+}
+.search-txt a i{
+  font-size: 8px;
+  margin-left: 3px;
+  vertical-align: middle;
+  @include translate(0,0);
+  @extend .transition-transform;
+}
+.search-txt:hover i{
+  @include translate(5px,0);
+}
+/***********************************************
+Pagination
+***********************************************/
+.pagination{
+  float: left;
+  padding: 0;
+}
+.pagination,.pagination li{
+  display: inline-block;
+  @extend .CompPro-Regulap;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.pagination li:not(.prev){
+  opacity: .7;
+  padding: 0 7px;
+  @extend .transition-all;
+}
+.pagination li a{
+  text-decoration: none;
+
+}
+.pagination li.active{
+  color: $color-hgroup;
+  opacity: 1;
+  text-decoration: underline;
+}
+.pagination li:hover{
+  opacity: 1;
+}

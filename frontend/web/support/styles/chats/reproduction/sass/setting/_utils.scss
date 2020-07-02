@@ -1,0 +1,13 @@
+$old-ie: false !default;
+$normal-br:true !default;
+
+@mixin old-ie {
+  @if $old-ie {
+    @content;
+  }
+}
+@mixin normal-br{
+  @if $normal-br{
+    @content;
+  }
+}

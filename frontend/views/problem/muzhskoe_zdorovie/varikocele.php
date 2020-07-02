@@ -1,0 +1,302 @@
+<!-- Header
+================================================== -->
+<header id="header-top">
+    <div class="row header-row-top hed-all-bg bg-header-top-man">
+        <div class="con-hd">
+            <div class="left-header txt-right">
+                <div class="wr-txt-header">
+                    <!--  Help Phone   -->
+                    <?= yii\base\View::render('@frontend/views/phone/_phone_help'); ?>
+
+                    <div class="p-r-in-bl">
+                        <h1 class="BebasNeueBold header-color title-problem-header">Признаки <br> и лечение варикоцеле</h1>
+                        <!--  SVG   -->
+                                <span class="wr-svg-header">
+                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 122" class="svg-slider-category">
+  <g fill="none" stroke="#2A2C35" transform="translate(-2029 -1723)">
+    <g transform="translate(2030 1724)">
+      <path d="M60,120 C93.137,120 120,93.137 120,60 C120,26.863 93.137,0 60,0 C26.863,0 0,26.863 0,60 C0,93.137 26.863,120 60,120 Z"/>
+      <path d="M53.816 94.892C68.202 94.892 79.863 83.232 79.863 68.846 79.863 54.461 68.203 42.799 53.816 42.799 39.43 42.799 27.769 54.459 27.769 68.845 27.769 83.23 39.429 94.891 53.815 94.891L53.816 94.892zM72.036 50.627L91.328 31.332M79.538 31.332L91.328 31.332 91.328 43.124"/>
+    </g>
+  </g>
+</svg>
+                                </span>
+                    </div>
+                    <h3>Мужское здоровье</h3>
+                </div>
+            </div>
+            <?= yii\base\View::render('@frontend/views/site/share'); ?>
+            <!--  Breadcrumbs   -->
+            <div id="breadcrumbs-wr">
+                <nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <ol class="cd-multi-steps">
+                        <li class="visited" itemprop="itemListElement" itemscope
+                            itemtype="https://schema.org/ListItem">
+                            <a href="/" itemprop="item" title="Главная">
+                                <span itemprop="name">Главная</span>
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <span class="cd-multi-steps-line">|</span>
+                        </li>
+
+                        <li class="current" itemprop="itemListElement" itemscope
+                            itemtype="https://schema.org/ListItem">
+                                <span itemprop="name"><?= $category->title .' - '. $problem->title ?></span>
+                                <meta itemprop="position" content="2">
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Empty Block-->
+<div class="row">
+    <div class="empty-block-section"></div>
+</div>
+<!-- Main Section
+================================================== -->
+<section id="main-article">
+    <div class="row">
+        <div class="container-pr">
+            <div class="col-1 view-des">
+                <!-- Drugs List
+                ================================================== -->
+                <div id="pin1" class="list-drugs-article">
+                    <!--  Сперотон   -->
+                    <figure class="drugs-article active" data-name-drugs="Сперотон">
+                        <img class="full-img-drugs" src="/img/drugs/drugs-index/speroton-index-small.jpg"
+                             alt="Сперотон">
+                        <figcaption>
+                            <a href="/nashi_produkty/speroton">
+                                     <span class="drugs-name-transition">
+                                    Сперотон
+                                         </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <!--  Прегнотон  -->
+                    <figure class="drugs-article" data-name-drugs="Прегнотон">
+                        <img class="full-img-drugs" src="/img/drugs/drugs-index/pregnoton-index-small.jpg"
+                             alt="Прегнотон">
+                        <figcaption>
+                            <a href="/nashi_produkty/pregnoton">
+                                     <span class="drugs-name-transition">
+                                    Прегнотон
+                                         </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <!--  Прегнотон Мама -->
+                    <figure class="drugs-article" data-name-drugs="Прегнотон Мама">
+                        <img class="full-img-drugs" src="/img/drugs/drugs-index/pregnoton_mama-sm.min.png"
+                             alt="Прегнотон">
+                        <figcaption>
+                            <a href="/nashi_produkty/pregnoton_mama">
+                                     <span class="drugs-name-transition">
+                                    Прегнотон Мама
+                                         </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <!--  Менсе   -->
+                    <figure class="drugs-article" data-name-drugs="Менсе">
+                        <img class="full-img-drugs" src="/img/drugs/drugs-index/mense-index-small.jpg"
+                             alt="Менсе">
+                        <figcaption>
+                            <a href="/nashi_produkty/mence">
+                                     <span class="drugs-name-transition">
+                                    Менсе
+                                         </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <!--  Синергин   -->
+                    <figure class="drugs-article" data-name-drugs="Синергин">
+                        <img class="full-img-drugs" src="/img/drugs/drugs-index/sinergin-index-small.jpg"
+                             alt="Синергин">
+                        <figcaption>
+                            <a href="/nashi_produkty/sinergin">
+                                     <span class="drugs-name-transition">
+                                    Синергин
+                                         </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <!--  Цисталин   -->
+                    <figure class="drugs-article" data-name-drugs="Цистениум">
+                        <img class="full-img-drugs" src="/img/drugs/drugs-index/cystenium-index-small.jpg"
+                             alt="Цистениум">
+                        <figcaption>
+                            <a href="/nashi_produkty/cystenium">
+                                     <span class="drugs-name-transition">
+                                    Цистениум
+                                         </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- TXT Варикоцеле: <br> симптомы, лечение, лекарственная терапия
+            ================================================== -->
+            <div id="wr-col-article" class="col-2 pad-col2">
+                <div class="row block-animate bl-pr-it bg-beige-light">
+                    <div class="con-pr-em">
+                        <div class="left-article p-pr-r">
+                            <div class="txt-left min_height" data-mh="group-im-pr">
+                                <div class="align-vertical">
+                                    <h2 class="title-section after-line h-pr-t">
+                                        <?= $content[0]->title ?>
+                                        <span class="item-number-article">
+                                <strong class="number-item"><i class="reproduction-quotes"></i></strong>
+                                <span class="vertical-line"></span>
+                            </span>
+                                    </h2>
+                                    <!--  Article   -->
+                                    <?= $content[0]->description ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-article p-pr-l">
+                            <div class="bg-48 m-img-bg" data-mh="group-im-pr"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Empty Block-->
+                <div class="row">
+                    <div class="empty-block-section"></div>
+                </div>
+                <!--  Section #2   -->
+                <div class="row  block-animate bl-pr-it bg-beige-light">
+                    <div class="con-pr-em">
+                        <div class="column-svg">
+                            <div class="wr-svg-article">
+                                <img class="full-img" src="/img/index-img/empty.min.jpg" alt="empty">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 500" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <filter id="a" width="316.7%" height="316.7%" x="-108.4%" y="-108.4%" filterUnits="objectBoundingBox">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="6.502"/>
+                                        </filter>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd" transform="translate(-1577 -1094)">
+                                        <g transform="translate(1577 1094)">
+                                            <path fill="#F7F7F7" d="M0 0H630V500H0z"/>
+                                            <image xlink:href="/img/index-img/men@2x.min.png" width="286.002" height="500" x="172" y="1"/>
+                                            <g class="m-end-w" transform="translate(24 133)">
+                                                <g class="m-org  Яички" transform="translate(291 1)">
+                                                    <g transform="translate(0 38)">
+                                                        <path stroke="#606D88" d="M7.84765625 220.601562L170 1.86920147e-7 246.117188 1.86920147e-7"/>
+                                                        <circle cx="9.285" cy="222.341" r="9" fill="#065BB9" class="blur" filter="url(#a)" opacity=".695"/>
+                                                        <circle cx="7.285" cy="221.341" r="5" fill="#4B6186"/>
+                                                    </g>
+                                                    <g class="org-gr" transform="translate(201)">
+                                                        <g class="gr-m">
+                                                            <circle cx="45" cy="45" r="45" fill="#F7F7F7" stroke="#495466" stroke-width="1.2"/>
+                                                            <path stroke="#4B5363" stroke-opacity=".566" stroke-width="1.2" d="M56.229,22.371 C56.229,26.057 51.171,29.057 45,29.057 C38.829,29.057 33.771,26.057 33.771,22.371 C33.771,18.686 38.829,17.229 45,17.229 C51.171,17.229 56.229,18.686 56.229,22.371 L56.229,22.371 Z"/>
+                                                            <g stroke="#4B5363" stroke-opacity=".566" stroke-width="1.2" transform="translate(33 34)">
+                                                                <path d="M12 47.771L12 12.457C12 .8 20.914.2 22.029.886 24 2.086 22.971 3.8 22.114 4.914 21.257 6.029 19.286 7.4 19.286 10.743L19.286 33.029C19.286 34.229 20.4 33.029 21.429 35.343 22.371 37.657 19.629 45.371 16.714 46.743 14.314 47.857 12 47.771 12 47.771L12 47.771zM12 47.771L12 12.457C12 .8 3.086.2 1.886.886-.086 2.086.943 3.8 1.8 4.914 2.657 6.029 4.629 7.4 4.629 10.743L4.629 33.029C4.629 34.229 3.514 33.029 2.486 35.343 1.543 37.657 4.286 45.371 7.2 46.743 9.6 47.857 12 47.771 12 47.771L12 47.771z"/>
+                                                                <path d="M15.686,2.6 C14.657,2.086 13.371,1.829 11.914,1.829 C10.457,1.829 9.171,2.171 8.143,2.6"/>
+                                                            </g>
+                                                            <g stroke="#4B5363" stroke-opacity=".566" stroke-width="1.2" transform="translate(14 5)">
+                                                                <path d="M46.943,39.4 C46.943,39.4 45.143,40 45.743,41.714 C46.343,43.429 48.057,42.829 48.057,42.829 C50.886,41.886 54.229,44.286 55.429,48.143 C56.629,52 55.343,55.857 52.514,56.8 C52.514,56.8 50.886,57.743 51.314,59.286 C51.829,60.829 53.629,60.229 53.629,60.229 C58.257,58.771 60.571,52.857 58.771,47.114 C56.971,41.371 51.571,37.943 46.943,39.4 L46.943,39.4 Z"/>
+                                                                <path d="M52.429.743C47.886 8.543 44.629 18.4 53.8 26.371 67.514 38.371 57.743 44.8 57.743 44.8M14.629 39.4C14.629 39.4 16.429 40 15.829 41.714 15.229 43.429 13.514 42.829 13.514 42.829 10.686 41.886 7.343 44.286 6.143 48.143 4.943 52 6.229 55.857 9.057 56.8 9.057 56.8 10.686 57.743 10.257 59.286 9.743 60.829 7.943 60.229 7.943 60.229 3.314 58.771 1 52.857 2.8 47.114 4.6 41.371 10 37.943 14.629 39.4L14.629 39.4z"/>
+                                                                <path d="M9.143,0.743 C13.686,8.543 16.943,18.4 7.771,26.371 C-5.943,38.371 3.829,44.8 3.829,44.8"/>
+                                                            </g>
+                                                            <path stroke="#5F98D7" stroke-width="1.5" d="M62.07 47.906C64.909 46.998 68.208 49.37 69.433 53.199 70.658 57.029 69.349 60.875 66.51 61.784 63.672 62.692 60.373 60.32 59.147 56.49 57.922 52.66 59.232 48.814 62.07 47.906L62.07 47.906zM23.109 61.728C20.271 60.82 18.961 56.973 20.186 53.143 21.411 49.314 24.711 46.942 27.549 47.85 30.387 48.758 31.697 52.605 30.472 56.434 29.247 60.264 25.948 62.636 23.109 61.728L23.109 61.728z" class="m-item"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <article class="not-col align-vertical">
+                                <h3 class="title-article after-line"><?= $content[1]->title ?></h3>
+                                <?= $content[1]->description ?>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!--Empty Block-->
+                <div class="row">
+                    <div class="empty-block-section"></div>
+                </div>
+                <!--  Section #3   -->
+                <div class="row  block-animate bl-pr-it bg-beige-light">
+                    <div class="con-pr-em">
+                        <div class="columh-block">
+
+                            <h3 class="title-article after-line"><?= $content[2]->title ?></h3>
+                            <?= $content[2]->description ?>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Empty Block-->
+                <div class="row">
+                    <div class="empty-block-section"></div>
+                </div>
+                <!--  Section #3   -->
+                <div class="row  block-animate bl-pr-it bg-beige-light">
+                    <div class="con-pr-em">
+                        <div class="columh-block">
+                            <h3 class="title-article after-line"><?= $content[3]->title ?></h3>
+                            <?= $content[3]->description ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Article
+================================================== -->
+<section id="footer-article">
+    <div class="row block-animate">
+        <div class="container-pr">
+            <div class="col-2">
+                <!--  Drugs   -->
+                <div class="row bl-pr-it">
+                    <div class="con-pr-em">
+                        <!--  Препараты, относящиеся к решению данной проблемы   -->
+                        <div class="drug-article-left p-pr-r">
+                            <h4 class="note-dr-footer">Этот препарат поможет восстановить сперматогенез</h4>
+                            <div class="sum-2-drugs sum-1 txt-center">
+                                <!--  Сперотон  -->
+                                <figure class="figure-article" data-name-drugs="Прегнотон">
+                                    <img class="full-img" src="/img/drugs/drugs-bg/speroton-bg.png"
+                                         alt="Сперотон">
+                                    <figcaption>
+                                        <a href="/nashi_produkty/pregnoton">
+                                            <span class="drugs-name-transition">
+                                            Сперотон
+                                                </span>
+                                        </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!--  List Problem   -->
+                        <div class="drug-article-right p-pr-l">
+                            <?= yii\base\View::render('@frontend/views/site/other_tags'); ?>
+                            <div class="tag-item txt-center">
+                                <ul class="l-p-c-a">
+                                    <li><a href="/muzhskoe_zdorovie/podgotovka_k_zachatiju"><i
+                                                class="reproduction-tags-2"></i>Подготовка к зачатию</a>
+                                    </li>
+                                    <li><a href="/muzhskoe_zdorovie/prostatit"><i class="reproduction-tags-2"></i>Простатит</a>
+                                    </li>
+                                    <li><a href="/muzhskoe_zdorovie/jerektilnaja_disfunkcija"><i
+                                                class="reproduction-tags-2"></i>Эректильная дисфункция</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

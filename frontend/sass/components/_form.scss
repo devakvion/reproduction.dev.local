@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/***********************************************
+BG
+***********************************************/
+.bg-header_contact {
+  background: url("/img/contact/contact_bg_top.jpg") no-repeat center;
+  background-size: cover;
+  @extend .transition-all;
+}
+
+/***********************************************
+Container
+***********************************************/
+.container-contact {
+  overflow: hidden;
+  padding: 20px 15px 25px;
+  background: darken(#FCFCFC, 2%);
+  border: 1px solid darken(#FCFCFC, 6%);
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    padding: 35px 45px 45px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.contact-header {
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    padding-right: 50px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+
+***********************************************/
+#contact-map .reproduction-logo_acvion {
+  color: $bg-header-menu;
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="tel"],
+.controls textarea,
+.controls select {
+  padding: 9px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #ffffff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls textarea:focus,
+.controls textarea:hover {
+  outline: none;
+  border-color: darken($color-line-txt, 10%);
+}
+
+.btn-contact {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  padding: 16px 30px 12px;
+  line-height: 1;
+  //margin-top: 20px;
+  background: darken(#F7F7F7, 10%);
+  border: 1px solid darken(#F7F7F7, 12%);
+  color: $color-hgroup;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  @extend .CompPro-Regulap;
+  @extend .transition-all;
+  @include breakpoint($large) {
+    margin-top: 10px;
+  }
+}
+
+.btn-contact:hover {
+  background: darken(#F7F7F7, 18%);
+  border: 1px solid darken(#F7F7F7, 20%);
+}
+
+/***********************************************
+TXT
+***********************************************/
+.ph-con-f {
+  margin-bottom: 10px;
+}
+
+.ph-con-f i {
+  font-size: 19px;
+  margin-left: 5px;
+  margin-top: -3px;
+}
+
+.num-phone {
+  @extend .CompPro-Regulap;
+  font-size: 24px;
+  font-weight: 500;
+  color: $color-hgroup;
+  margin-bottom: -5px;
+}
+
+.ok-contact p {
+  color: #2cb7af;
+  font-size: 12px;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.right-section address {
+  margin-top: 20px;
+  font-style: normal;
+  color: $color-primary;
+  font-size: 17px;
+}
+
+.p-contact {
+  display: inline-block;
+  position: relative;
+  color: $color-primary;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.p-contact i {
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.p-contact .reproduction-email {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.error-contact p {
+  color: rgba(232, 94, 120, 0.88);
+  font-size: 12px;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/***********************************************
+   Captcha
+***********************************************/
+.cap-mod, .reset-cap, #faqform-verifycode, #contactform-verifycode ,#commentform-verifycode{
+  float: left;
+}
+
+.reset-cap {
+  padding-top: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  height: 42px;
+  margin-right: 5px;
+  border: 1px solid lighten($color-line-txt, 15%);
+  background: #fff;
+  @include breakpoint($small-min) {
+    margin-right: 10px;
+  }
+}
+
+.cap-mod {
+  padding-top: 2px;
+  border: 1px solid lighten($color-line-txt, 15%);
+  margin-right: 5px;
+  height: 42px;
+  overflow: hidden;
+  background: #fff;
+  min-width: 80px;
+  max-width: 80px;
+  //background: #54545e;
+  @include breakpoint($small-min) {
+    margin-right: 10px;
+  }
+}
+
+.n-cap-in {
+  display: inline-block;
+  font-size: 90%;
+  padding: 0 15px;
+  margin: 0;
+  vertical-align: middle;
+  float: left;
+  margin-bottom: 10px;
+  @include breakpoint($large) {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.cap-mod img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.field-contactform-verifycode {
+  text-align: center;
+}
+
+.form-group.field-contactform-verifycode input, .form-group.field-faqform-verifycode input,
+.form-group.field-commentform-verifycode input {
+  width: 125px;
+  margin-bottom: 0;
+
+}
+/***********************************************
+Выбор пола
+***********************************************/
+#commentform-gender{
+  overflow: hidden;
+  width: 100%;
+}
+.modal-radio{
+  display: inline-block;
+  float: left;
+}
+.lab-rad{
+  color: $color-primary;
+  font-size: 16px;
+}
+.remodal .in-radio{
+  display: inline-block;
+  margin: 0;
+}
+.field-commentform-gender{
+  height: 55px;
+}
+/***********************************************
+Map
+***********************************************/
+#contact-map{
+  height: 250px;
+  @include breakpoint($small-min) {
+  height: 280px;
+  }
+  @include breakpoint($small) {
+    height: 320px;
+  }
+  @include breakpoint($medium) {
+    height: 350px;
+  }
+  @include breakpoint($large) {
+    height: 440px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}

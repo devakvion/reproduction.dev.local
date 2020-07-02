@@ -1,0 +1,1604 @@
+@charset "UTF-8";
+/***********************************************
+Global //
+***********************************************/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'PTSansNarrowRegular', sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  // -webkit-backface-visibility: hidden;
+  // -moz-backface-visibility: hidden;
+  // backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  // -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  @include breakpoint($large-xxxl) {
+    background: #fdfdfd;
+  }
+}
+
+#main {
+  opacity: 0;
+  // @include transition(all 1s);
+  flex: 1 0 auto;
+}
+
+#main.visible {
+  opacity: 1;
+}
+
+#wrapper-main-site {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  max-width: $max-width-site;
+  min-width: $min-width-site;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  //margin-top: -13px;
+  @include breakpoint($large-xxxl) {
+    @include box-shadow-2(3px 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15));
+  }
+}
+
+//
+iframe[name='google_conversion_frame'] {
+  height: 0 !important;
+  width: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  margin-top: -13px;
+  float: left;
+}
+
+#wrapper-content-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  z-index: 5;
+}
+
+#wrapper-content-bg.open-menu {
+  height: 100%;
+  opacity: 1;
+  background: rgba(11, 34, 57, 0.62);
+  @extend .transition-opacity;
+}
+
+#mobile #wrapper-content-bg.open-menu {
+  z-index: 10;
+  opacity: 1;
+  height: 100%;
+  background: rgba(11, 34, 57, 0.62);
+}
+
+.row {
+  width: 100%;
+  //overflow: hidden;
+  position: relative;
+  @extend .leare_fix;
+
+}
+
+/***********************************************
+Container
+***********************************************/
+.con-hd, .container, .container-not-pad, .c-f-bot, .container-pr, .wr-s-sl {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $max-width-container;
+  min-width: $min-width-container;
+}
+
+.container-human {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 400px;
+  min-width: $min-width-container;
+  @include breakpoint($small) {
+    max-width: 500px;
+  }
+  @include breakpoint($medium) {
+    padding: 0 30px;
+    max-width: $max-width-container;
+  }
+  @include breakpoint($large) {
+    padding: 0 40px 50px;
+  }
+
+}
+
+.container {
+  padding: 25px 0 30px;
+  @include breakpoint($small-min) {
+  }
+  @include breakpoint($small) {
+    padding: 30px 40px 35px;
+  }
+  @include breakpoint($medium) {
+    padding: 35px 40px 45px;
+    width: 92%;
+  }
+  @include breakpoint($large) {
+    padding: 40px 40px 50px;
+  }
+}
+
+.container-pr {
+  @include breakpoint($medium) {
+    width: 92%;
+  }
+}
+
+.con-hd, .wr-s-sl {
+  height: 100%;
+  @include breakpoint($medium) {
+    width: 90%;
+  }
+  @include breakpoint($large) {
+    width: 92%;
+  }
+}
+
+.container-not-pad {
+  @include breakpoint($medium) {
+    padding: 25px 0 40px;
+    width: 92%;
+  }
+  @include breakpoint($large) {
+    padding: 40px 0 50px;
+  }
+}
+
+.container-it {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include breakpoint($small-min) {
+    max-width: 400px;
+  }
+  @include breakpoint($small) {
+    max-width: 500px;
+  }
+  @include breakpoint($medium) {
+    max-width: 100%;
+    padding: 0;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.s-p_m {
+  margin: 0 auto;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    max-width: 400px;
+  }
+
+}
+
+/***********************************************
+Grid
+***********************************************/
+.left-section {
+  @include grid-span(12, 1);
+  @include breakpoint($medium) {
+    padding-right: 30px;
+    @include grid-span(6, 1);
+  }
+  @include breakpoint($large) {
+    padding-right: 20px;
+  }
+  @include breakpoint($large-xl) {
+    padding-right: 30px;
+  }
+}
+
+.right-section {
+  @include grid-span(12, 1);
+  @include breakpoint($medium) {
+    @include grid-span(6, 7);
+  }
+  @include breakpoint($large) {
+    padding-left: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+BG Section
+***********************************************/
+.container-bg-gray {
+  overflow: hidden;
+  background: $bg-menu-top;
+  border: 1px solid darken($bg-menu-top, 5%);
+}
+
+.container-bg-white {
+  background: white;
+  overflow: hidden;
+}
+
+.bg-beige-light {
+  background: $color-beige-ot;
+  overflow: hidden;
+  border: 1px solid darken($color-beige-ot, 5%);
+}
+
+/***********************************************
+Empty Block
+***********************************************/
+.empty-block-section {
+  height: 30px;
+
+  @include breakpoint($large) {
+    height: 40px;
+  }
+}
+
+/***********************************************
+Line Ковычки
+***********************************************/
+.item-number {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  font-size: 14px;
+  color: darken($color-beige, 10%);
+  font-weight: normal;
+}
+
+.item-number-article {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 13px;
+  color: darken($color-beige, 10%);
+  font-weight: normal;
+  display: none;
+}
+
+.vertical-line {
+  display: block;
+  margin: 0 auto;
+  width: 1px;
+  height: 30px;
+  overflow: hidden;
+  background: $color-line-txt;
+  @include breakpoint($small-min) {
+    height: 33px;
+  }
+  @include breakpoint($medium) {
+    height: 35px;
+  }
+  @include breakpoint($large) {
+    height: 40px;
+  }
+}
+
+.line-all, .line-row {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: $color-line-txt;
+}
+
+.line-all {
+  margin-top: 10px;
+  @include breakpoint($small) {
+    margin-top: 15px;
+  }
+  @include breakpoint($large) {
+    margin-top: 30px;
+  }
+}
+
+/***********************************************
+Next Section
+***********************************************/
+
+.reproduction-further.next-ic {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  @include rotate(-90deg);
+  font-size: 24px;
+  color: darken($color-line-txt, 10%);
+  @include breakpoint($large) {
+    bottom: 3px;
+  }
+}
+
+/***********************************************
+Title Human
+***********************************************/
+
+.title-section.t-dr-in {
+  font-size: 20px;
+  margin-top: 10px;
+  @include breakpoint($small) {
+    margin-top: 15px;
+  }
+  @include breakpoint($medium) {
+    margin-top: 0;
+    font-size: 23px;
+  }
+  @include breakpoint($large) {
+    margin-bottom: 8px;
+    display: block;
+    padding-right: 0;
+    font-size: 24px;
+  }
+}
+
+.title-section.t-dr-in::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: $color-line-txt;
+  @include breakpoint($large) {
+    display: none;
+  }
+
+}
+
+.title-section.t-dr-in .item-number {
+  right: auto;
+  left: 145px;
+  @include breakpoint($small) {
+    left: 155px;
+  }
+  @include breakpoint($medium) {
+    left: 165px;
+  }
+  @include breakpoint($large) {
+    left: auto;
+    right: 40px;
+    bottom: -9px;
+  }
+}
+
+/***********************************************
+Выбор проблемы New
+***********************************************/
+.human-block {
+  display: inline-block;
+
+  @include breakpoint($large) {
+    display: none;
+  }
+
+}
+
+.tabbed-wr {
+  width: 100%;
+  /* @include breakpoint($large) {
+     @include grid-span(9, 1);
+   }*/
+}
+
+/*.tabbed {
+  margin: 50px auto;
+
+}*/
+
+.tabbed > input {
+  display: none;
+}
+
+.tabbed > label {
+  display: block;
+  float: left;
+  padding: 12px 10px 10px 9px;
+  color: #333b54;
+  cursor: pointer;
+  border-radius: 2px 2px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: background-color .3s;
+  font-family: PFDinTextCompProRegular, sans-serif;
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    font-size: 15px;
+    padding: 12px 15px 10px 13px;
+  }
+  @include breakpoint($large-l) {
+    font-size: 16px;
+  }
+}
+
+.tabbed > label:not(.first-label):hover,
+.tabbed > input:checked + label {
+  background: #5f92d1;
+  color: #fff;
+}
+
+#human-section .tabs {
+  clear: both;
+  position: relative;
+
+  @include breakpoint($medium) {
+    border-top: 1px solid #5f92d1;
+  }
+
+}
+
+#human-section .tabs > div {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: auto;
+  position: absolute;
+  // border-top: 1px solid #2c3954;
+  padding-top: 30px;
+  line-height: 1.4em;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 0;
+}
+
+#human-section .tabs > div.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/*#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
+  // transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+}*/
+
+@media screen and (max-width: 768px) {
+  /*.tabbed {
+    width: 400px
+  }*/
+  .tabbed > label {
+    display: none
+  }
+  #human-section .tabs > div {
+    //width: 400px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin-bottom: 60px;
+  }
+
+}
+
+.tabbed .first-label {
+  margin-right: 30px;
+  cursor: default;
+  text-transform: none;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1;
+  padding-left: 0;
+  display: none;
+
+  @include breakpoint($large) {
+    display: inline-block;
+    margin-bottom: -2px;
+  }
+  @include breakpoint($large-l) {
+    font-size: 25px;
+    margin-bottom: -4px;
+  }
+}
+
+.category-i {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.category-i svg {
+  stroke: #333b54;
+  stroke-width: 3;
+  @extend .transition-all;
+}
+
+.tabbed > label:not(.first-label):hover svg,
+.tabbed > input:checked + label svg {
+  stroke: #fff;
+}
+
+#human-section .tabs h3 {
+  @extend .CompPro-Regulap;
+  font-size: 19px;
+  padding-bottom: 5px;
+  color: #333b54;
+  border-bottom: 1px solid #5f92d1;
+  @include breakpoint($medium) {
+    display: none;
+  }
+}
+
+.show-organs-name {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  @include breakpoint($medium) {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+/***********************************************
+Список проблем
+***********************************************/
+
+.human-problem a {
+  border-radius: 2px;
+  border: 1px solid #5f98d7;
+  display: inline-block;
+  padding: 10px 15px 11px;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-size: 15px;
+  margin-right: 5px;
+  @extend .transition-all;
+  @include breakpoint($small) {
+    font-size: 16px;
+  }
+
+  @include breakpoint($medium) {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  @include breakpoint($large) {
+    font-size: 17px;
+    padding: 12px 20px 13px;
+  }
+}
+
+.human-problem.human-problem-w a {
+  margin-bottom: 12px;
+}
+
+.human-problem a:hover {
+  background: #5f98d7;
+  color: #fff;
+  @include box-shadow-2(0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12));
+}
+
+/***********************************************
+Силуэты
+***********************************************/
+.human-problem {
+
+  @include breakpoint($medium) {
+    width: 35%;
+    float: left;
+    padding-right: 20px;
+  }
+  @include breakpoint($large) {
+    width: 20%;
+  }
+  @include breakpoint($large-l) {
+    width: 25%;
+  }
+
+}
+
+.human-main {
+  width: 100%;
+  @include breakpoint($medium) {
+    width: 65%;
+    float: left;
+  }
+  @include breakpoint($large) {
+    width: 55%;
+    padding: 0 0 0 2%;
+  }
+  @include breakpoint($large-l) {
+    width: 50%;
+  }
+}
+
+/***********************************************
+Help
+***********************************************/
+.wr-help-human {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  z-index: 4;
+  display: none;
+  @include breakpoint($medium) {
+    display: inline-block;
+  }
+}
+
+.wr-help-human a {
+  color: #ffd54f;
+  font-size: 33px;
+}
+
+.wr-help-human a i {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  @extend .transition-box-shadow;
+}
+
+.wr-help-human a:hover i {
+  @extend .z-depth-1;
+}
+
+/***********************************************
+Показ наименований органов
+***********************************************/
+.problem-show-txt {
+  position: relative;
+  display: block;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: $bg-header-menu;
+  @include animation(widthIn 0.6s linear);
+  @extend .CompPro-Regulap;
+  @extend .translate3d;
+  @include breakpoint($large-xl) {
+    font-size: 18px;
+  }
+}
+
+.problem-show-txt::after {
+  content: " ";
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  height: 5px;
+  width: 5px;
+  background: lighten($bg-header-menu, 20%);
+  border-radius: 50%;
+}
+
+/***********************************************
+Drugs Main
+***********************************************/
+.human-drugs {
+  width: 100%;
+  position: relative;
+  @include breakpoint($large) {
+    /*    @include grid-span(3, 10);
+        margin-right: -10px;*/
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 25%;
+    z-index: 10;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.container-img-drugs {
+  text-align: center;
+  @include breakpoint($medium) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @include breakpoint($large) {
+    padding-left: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+Figure All
+***********************************************/
+figure {
+  margin: 0;
+  padding: 0;
+  @extend .position-relative;
+}
+
+figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.70);
+  @include transition(opacity 0.3s ease-in-out);
+  @extend .translate3d;
+}
+
+figure a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  text-align: center;
+}
+
+figure img {
+  @extend .full-img;
+}
+
+.figure-durgs.active figcaption {
+  opacity: 1;
+  @include transition(opacity 0.4s ease-in-out 0.1s);
+}
+
+.drugs-name-transition {
+  margin: 0;
+  line-height: 1;
+  padding: 10px 0 7px;
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: $color-hgroup;
+  @extend .CompPro-Regulap;
+  @extend .vertical-center;
+}
+
+.drugs-name-transition::after {
+  background: darken($color-line-txt, 20%);
+  @extend .after--top::after;
+
+}
+
+.drugs-name-transition::before {
+  background: darken($color-line-txt, 20%);
+  @extend .after-line-100::after;
+}
+
+figure:hover figcaption, figure:hover .drugs-name-transition {
+  opacity: 1;
+}
+
+/***********************************************
+Figure Index
+***********************************************/
+.s-f-i {
+  font-size: 16px;
+}
+
+.img-drugs-item {
+  width: 50%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  float: left;
+  display: inline-block;
+  @include breakpoint($small) {
+    width: 33.2%;
+  }
+  @include breakpoint($medium) {
+    width: 16.6%;
+  }
+  @include breakpoint($large) {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+}
+
+/***********************************************
+IMG Setting
+***********************************************/
+.img-mg {
+  margin-bottom: 20px;
+  @include breakpoint($small) {
+    margin-bottom: 25px;
+  }
+  @include breakpoint($medium) {
+    margin-bottom: 0;
+  }
+}
+
+/***********************************************
+Block Animate
+***********************************************/
+.block-animate {
+  opacity: 0;
+  @include translate(0, 20px);
+  -webkit-transition: -webkit-transform 0.5s linear, opacity 0.8s linear;
+  -moz-transition: -moz-transform 0.5s linear, opacity 0.8s linear;
+  -o-transition: -o-transform 0.5s linear, opacity 0.8s linear;
+  -ms-transition: -ms-transform 0.5s linear, opacity 0.8s linear;
+  transition: transform 0.5s linear, opacity 0.8s linear;
+  // @extend .reset-tr;
+}
+
+.block-animate.visible {
+  opacity: 1;
+  @include translate(0, 0);
+}
+
+/***********************************************
+R Copy Drugs
+***********************************************/
+#svg-r {
+  position: absolute;
+  top: -35px;
+  right: -15px;
+  width: 15px;
+  height: auto;
+  fill: #5a6893;
+}
+
+.next-mense {
+  color: darken(#5a6893, 5%);
+  font-size: 20px;
+  @extend .CompPro-Regulap;
+}
+
+.next-mense svg {
+  width: 16px;
+  height: auto;
+  fill: darken(#5a6893, 5%);
+  vertical-align: middle;
+  margin-left: 3px;
+  @extend .transition-all;
+}
+
+.next-mense:hover svg {
+  @include translate(5px, 0);
+}
+
+/***********************************************
+Новый год
+***********************************************/
+/*#logo-left {
+  position: relative;
+}
+
+.toy {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -35px;
+  width: 25px;
+  height: 35px;
+  background: url("/img/new_year/toy.svg") no-repeat center;
+  background-size: contain;
+}
+
+@media (min-width: 790px) {
+  .toy {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1023px) {
+  .toy {
+    right: -45px;
+    width: 35px;
+    height: 45px;
+  }
+}*/
+
+/***********************************************
+Scroll
+***********************************************/
+#wr-scroller {
+  position: fixed;
+  display: inline-block;
+  bottom: 40px;
+  text-align: right;
+  //right: 0;
+  /*  width: 100%;
+    max-width: 1600px;*/
+  width: 50px;
+  height: 50px;
+  margin-left: -50px;
+  // display: none;
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.4s;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    bottom: 60px;
+    margin-left: -80px;
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+#wr-scroller.active {
+  opacity: 0.85;
+}
+
+#scroller {
+  display: inline-block;
+  background: url("/img/dashboard/scroll-up-top.svg") no-repeat center;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 2;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    width: 45px;
+    height: 45px;
+  }
+  @include breakpoint($large) {
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+#wr-scroller.active:hover {
+  opacity: 1;
+}
+
+iframe[name='google_conversion_frame'] {
+  height: 0 !important;
+  width: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  margin-top: -13px;
+  float: left;
+}
+
+/***********************************************
+New Mobile
+***********************************************/
+#fotorama5 .mobile-container-fotorama {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#section-drugs-mobile #fotorama5 .btn-drugs-mobile {
+  color: transparent;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.reproduction-quotes {
+  display: none;
+}
+
+/***********************************************
+Sale
+***********************************************/
+$main-color-1-1: #6290d7;
+$font-sale: 'PTSansNarrowRegular';
+
+.icons-sale-video {
+  margin-top: -30px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    margin-top: 0;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.icons-sale-video .tooltip-has {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 15;
+  padding: 10px;
+}
+
+.icon-pr-top svg, .icons-sale-video ul li svg {
+  width: 100%;
+  height: auto;
+}
+
+.pl-cr {
+  fill: $main-color-1-1;
+  //fill-opacity: 0;
+  stroke: $main-color-1-1;
+  @extend .transition-all;
+}
+
+.sale-all-bg-bl .pl-cr {
+  fill: #fff;
+  stroke: $main-color-1-1;
+}
+
+.sale-all-bg-bl .pl-ph {
+  // stroke: $main-color-1-1;
+  stroke: $main-color-1-1;
+  @extend .transition-all;
+}
+
+.pl-ph {
+  // stroke: $main-color-1-1;
+  stroke: #fff;
+  @extend .transition-all;
+}
+
+.sale-all:hover .pl-cr {
+  // fill-opacity: 1;
+  fill: darken($main-color-1-1, 10%);
+  stroke: darken($main-color-1-1, 10%);
+}
+
+.sale-all:hover .pl-ph {
+  stroke: #fff;
+}
+
+.arrow_box2 {
+  position: relative;
+
+}
+
+.arrow_box2:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: $main-color-1-1;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.tooltip-sl, .tooltip-sl-min {
+  position: absolute;
+  bottom: -60px;
+  width: 240px;
+  left: 50%;
+  margin-left: -120px;
+  display: inline-block;
+  text-align: center;
+  z-index: 50;
+  opacity: 0;
+  border-radius: 3px;
+  visibility: hidden;
+  background: $main-color-1-1;
+  transform: translateY(20px);
+  @extend .transition-all;
+}
+
+.tooltip-has:hover .tooltip-sl {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  transform: translateY(0);
+}
+
+.tooltip-sl a, .tooltip-sl span {
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: .5px;
+  font-family: $font-sale;
+}
+
+.tooltip-sl span {
+  padding: 10px 15px;
+}
+
+.sl-1 {
+  width: 50%;
+  position: relative;
+  float: left;
+  border-radius: 5px;
+  background: $main-color-1-1;
+  @extend .transition-all;
+}
+
+.sl-1:hover {
+  background: darken($main-color-1-1, 15%);
+}
+
+.sl-1:first-child:after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 50%;
+  width: 1px;
+  border-right: 1px solid darken($main-color-1-1, 10%);
+
+}
+
+/***********************************************
+Новый год
+***********************************************/
+.christm-wr1, .christm-wr2 {
+  position: absolute;
+  left: 130px;
+  top: 0;
+  z-index: 100;
+  display: none;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    // left: 250px;
+  }
+  @include breakpoint($large) {
+    display: inline-block;
+  }
+  @include breakpoint($large-l) {
+    left: 105px;
+  }
+  @extend .transition-all;
+}
+
+.christm-wr2 {
+  left: 190px;
+  display: inline-block;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    display: none;
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+.christm1 {
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stm1 {
+  background-image: url("/img/svg-min/1new.svg");
+  animation: swing-ch ease-in-out 2s infinite alternate;
+}
+
+.stm2 {
+  background-image: url("/img/svg-min/2new.svg");
+  animation: swing-ch ease-in-out 1.6s infinite alternate;
+}
+
+.swing-ch {
+
+  transform-origin: center -20px;
+  //box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.cristm-logo {
+  position: absolute;
+  top: -8px;
+  left: -11px;
+  width: 19px;
+  height: 17px;
+  background-size: contain;
+  background-position: center;
+  transform: rotate(-48deg);
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-image: url("/img/svg-min/3new.svg");
+
+}
+
+@keyframes swing-ch {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+/***********************************************
+PDF
+***********************************************/
+.pdf-l {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-left: 5px;
+  position: relative;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/svg-min/pdf.svg");
+}
+
+.pdf-l svg {
+  width: 100%;
+  height: auto;
+}
+
+.prf-l-wr {
+  display: inline-block;
+  transform: translateY(-10px);
+  margin-bottom: 20px;
+}
+
+/***********************************************
+Cookie
+***********************************************/
+.fixed {
+  position: fixed;
+  // will-change: transform;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* modules/cookie-disclaimer.css */
+
+.cookie-disclaimer {
+  background-color: rgba(46, 52, 84, 0.96);
+  opacity: 0;
+  transition: all .4s ease-in-out;
+  font-family: PTSansNarrowRegular, sans-serif;
+}
+
+.cookie-disclaimer.is-active {
+  opacity: 1;
+  max-height: 300px;
+}
+
+.media--center {
+  position: relative;
+  padding: 30px 4% 40px;
+}
+
+.media--center:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.media__body {
+  width: 100%;
+  padding: 0 2%;
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .media__body {
+    width: 80%;
+    float: left;
+  }
+}
+
+.media__body p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-bottom: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+}
+
+.media__object {
+  width: 100%;
+  padding: 0 2%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .media__object {
+    width: 20%;
+    float: right;
+    margin-top: 0;
+  }
+}
+
+.media__object .btn-wrap {
+  margin: 0 auto;
+}
+
+.close-cookie {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+}
+
+/***********************************************
+Close
+***********************************************/
+.open-close-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  //  margin: 2em 45%;
+  font-size: 20px;
+  border-radius: 50%;
+  position: relative;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  cursor: pointer;
+}
+
+.open-close-button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  height: 6%;
+  left: 10%;
+  top: 47%;
+}
+
+.open-close-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: 6%;
+  height: 80%;
+  left: 47%;
+  top: 10%;
+}
+
+.open-close-button.open {
+  background-color: rgba(255, 255, 255, 0.1);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.open-close-button.open:after {
+  background-color: #fff;
+}
+
+.open-close-button.open:before {
+  background-color: #fff;
+}
+
+/***********************************************
+Btn
+***********************************************/
+.btn-wrap span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: .5px;
+  display: inline-block;
+  padding: 13px 20px;
+  line-height: 1;
+  border-radius: 2px;
+  opacity: .8;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  transition: all 0.3s;
+}
+
+.btn-wrap span:hover {
+  opacity: 1;
+  border-color: #fff;
+}
+
+/***********************************************
+Article IMG
+***********************************************/
+.advertising-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto 0;
+  display: block;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    max-width: 450px;
+    margin: 40px auto 0;
+  }
+  @include breakpoint($large) {
+    max-width: 550px;
+    margin: 50px auto 0;
+  }
+  @include breakpoint($large-xl) {
+    max-width: 600px;
+  }
+}
+
+.article-it-l li {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/***********************************************
+Share
+***********************************************/
+.headerIndex__elements-l {
+  position: absolute;
+right: 20px;
+  top: 70px;
+  z-index: 40;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    right: 0;
+    top: 30px;
+  }
+  @include breakpoint($large) {
+
+  }
+
+
+}
+
+.headerIndex__elements-l:hover li.link-el::after {
+  opacity: 1;
+}
+
+li.link-el {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 10;
+
+  cursor: pointer;
+}
+
+li.link-el::after, li.link-el::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  @extend .bg-contain;
+  @extend .transition-all;
+}
+
+li.link-el::after {
+  background-image: url("/img/index-img/icons/share-h.svg");
+  z-index: 3;
+  opacity: 0;
+}
+
+li.link-el::before {
+  background-image: url("/img/index-img/icons/share.svg");
+}
+
+/***********************************************
+Yandex
+***********************************************/
+.has-share:hover .shareYa {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.shareYa {
+  position: absolute;
+  visibility: hidden;
+  top: calc(100% + 5px);
+  left: 50%;
+  margin-left: -12px;
+  opacity: 0;
+  transform: translateY(10px);
+  z-index: 15;
+  @extend .transition-all;
+}
+
+.has-share .shareYa li {
+  opacity: .9;
+  margin-bottom: 5px;
+}
+
+.shareYa li:hover {
+  opacity: 1;
+}
+#video-instruction {
+  margin-top: 14px;
+}

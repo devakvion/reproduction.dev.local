@@ -1,0 +1,18 @@
+.bg-header-top-error {
+  background: url("/img/error/error_bg.jpg") no-repeat center;
+  background-size: cover;
+  @extend .transition-all;
+}
+.alert-danger{
+  margin-top: 15px;
+  color: #e57373;
+  margin-bottom: 10px;
+}
+.site-error p{
+  color: $color-primary;
+  font-size: 17px;
+}
+.site-error a{
+  text-decoration: underline;
+  color: #2f4f71;
+}

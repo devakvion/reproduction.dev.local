@@ -1,0 +1,109 @@
+/***********************************************
+Slider BTN
+***********************************************/
+.wr-btn-slider {
+  margin-top: 25px;
+  @include breakpoint($medium) {
+    margin-top: 20px;
+  }
+  @include breakpoint($large) {
+    margin-top: 30px;
+  }
+  @include breakpoint($large-xl) {
+    margin-top: 40px;
+  }
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border: 1px solid;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 1;
+  margin: 0;
+  font-weight: 500;
+  @extend .pt-sans-narrow;
+}
+
+.btn.btn-slider {
+  font-size: 14px;
+  height: 40px;
+  line-height: 39px;
+  padding: 0px 13px 0px 22px;
+  color: $button-color-white;
+  background: $color-hover-menu;
+  border-color: $color-hover-menu;
+  border-radius: 1px;
+  @include box-shadow-2(0 2px 4px 0 rgba(0, 0, 0, 0.10), 0 2px 8px 0 rgba(0, 0, 0, 0.08));
+  @extend .transition-all;
+  z-index: 1;
+  @include breakpoint($medium) {
+    height: 45px;
+    line-height: 43px;
+    padding: 0px 15px 0px 24px;
+    font-size: 14px;
+  }
+  @include breakpoint($large) {
+    height: 47px;
+    line-height: 45px;
+    font-size: 15px;
+    padding: 0px 15px 0px 25px;
+  }
+  @include breakpoint($large-xl) {
+    padding: 0px 20px 0px 30px;
+
+  }
+}
+
+.wr-arrow-i {
+  display: inline-block;
+}
+
+.btn.btn-slider i.reproduction-further-btn {
+  position: relative;
+  font-size: 11px;
+  padding: 0 5px 0 0;
+  width: 15px;
+  height: auto;
+  @extend .translate3d;
+  @include transition(transform 0.2s linear);
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 15px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.reproduction-further-btn.arrow-btn-1 {
+  margin-right: -14px;
+}
+
+.btn.btn-slider:hover span i.arrow-btn-1 {
+  @include translate(8px, 0);
+  @include transition(transform 0.2s linear .1s);
+}
+
+.btn.btn-slider:hover span i.arrow-btn-2 {
+  @include translate(8px, 0);
+  @include transition(transform 0.2s linear);
+}
+
+.btn.btn-slider:hover {
+  @include box-shadow-2(0 2px 4px 0 rgba(0, 0, 0, 0.17), 0 2px 8px 0 rgba(0, 0, 0, 0.14));
+  background: $color-hover-menu-active;
+  color: $color-white;
+
+}
+

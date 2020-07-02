@@ -1,0 +1,62 @@
+.bg-header_pr {
+    background-image: url(/img/proizviditel/5.min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-header_pr_before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .4;
+}
+.img-pr{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.pr-last{
+    margin-top:40px;
+}
+.fl-pr img{
+    margin-top: 20px;
+}
+.proizviditel{
+    max-width: 900px;
+    margin: 0 auto;
+}
+/*.vertical-line{
+    align-self: center;
+}*/
+.list-article.pr-list{
+    padding-left: 25px;
+}
+.list-article.pr-list li{
+    display: list-item;
+    list-style-position: outside;
+}
+@media (min-width: 1050px) {
+    .fl-pr{
+        display: flex;
+        align-items: center;
+    }
+    .fl-pr>div{
+        width: 50%;
+    }
+    .proizviditel{
+        max-width: 100%;
+
+    }
+    .pr-last .p-pr-l{
+        order: 1;
+    }
+    .pr-last{
+        margin-top:60px;
+    }
+    .fl-pr img{
+        margin-top: 0;
+    }
+}

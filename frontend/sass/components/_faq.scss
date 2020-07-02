@@ -1,0 +1,592 @@
+@charset "UTF-8";
+/***********************************************
+Header
+***********************************************/
+.bg-header-questions .left-header {
+  margin-top: 120px;
+  @include breakpoint($small-min) {
+    margin-top: 130px;
+  }
+  @include breakpoint($small) {
+    margin-top: 150px;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+BG
+***********************************************/
+.bg-header-questions {
+  background: url("/img/questions/questions.jpg") no-repeat;
+  background-position: 60% 50%;
+  background-size: cover;
+  @extend .transition-all;
+  @include breakpoint($small-min) {
+    background-position: 60% 50%;
+  }
+  @include breakpoint($small) {
+    background-position: center;
+  }
+}
+
+/***********************************************
+Container
+***********************************************/
+.con-item-questions {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 20px;
+  @include breakpoint($small-min) {
+    max-width: 90%;
+  }
+}
+
+.help-qf {
+  font-size: 18px;
+}
+
+/***********************************************
+Help
+***********************************************/
+.help-faq-t {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 38px;
+  height: auto;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    right: -40px;
+    top: -7px;
+  }
+  @include breakpoint($medium) {
+    top: -5px;
+    right: -3px;
+  }
+  @include breakpoint($large) {
+    top: -8px;
+    right: -10px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.help-faq-t i {
+  width: 99%;
+  height: auto;
+  color: #ffd54f;
+}
+
+.help-faq-t a {
+  font-size: 35px;
+  text-align: center;
+}
+
+/***********************************************
+Item
+***********************************************/
+#faq {
+  overflow: hidden;
+  @extend .transition-height;
+}
+
+.wr-t-top-quest {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;
+  @include breakpoint($medium) {
+    padding-right: 40px;
+    width: 10%;
+    margin-bottom: 10px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.con-form-fil {
+  position: relative;
+  float: left;
+  width: auto;
+  margin-bottom: 5px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    padding-right: 30px;
+  }
+  @include breakpoint($large) {
+    padding-right: 50px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.wr-con-fil {
+  margin-bottom: 7px;
+  padding: 25px 20px 0;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    padding: 30px 0 0 0;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.wr-quest-item {
+  position: relative;
+  border: 1px solid darken(#fff, 12%);
+  border-radius: 3px;
+  background: darken(#fff, 0.4%);
+  margin-bottom: 30px;
+}
+
+.wr-quest-item.bg-quest-b {
+  background: #fff;
+}
+
+.wr-content-quest {
+  padding: 20px 15px;
+  overflow: hidden;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    padding: 20px 35px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.quest-sp {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -15px;
+  top: -15px;
+  background: url("/img/questions/questions-ar.svg") no-repeat center;
+  background-size: contain;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    width: 36px;
+    height: 36px;
+    left: -18px;
+    right: auto;
+    top: 50%;
+    margin-top: -18px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.con-quest {
+  //padding-left: 10px;
+}
+
+.p-quest {
+  position: relative;
+  color: $color-primary;
+  line-height: 1.3;
+  font-size: 16px;
+  padding-left: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 17px;
+    padding-left: 15px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.t-quest {
+  display: inline-block;
+  position: relative;
+  color: $color-hgroup;
+  //color: $bg-header-menu;
+  font-size: 19px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small) {
+    font-size: 20px;
+  }
+  @include breakpoint($medium) {
+    font-size: 20px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.t-quest::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background: $color-line-txt;
+}
+
+.l-op-quest, .l-cl-quest {
+  cursor: pointer;
+  font-size: 17px;
+  padding-left: 15px;
+  margin-top: 5px;
+  text-decoration: underline;
+  color: $color-hgroup;
+  @extend .CompPro-Regulap;
+}
+
+.tag-quest {
+  float: right;
+  display: inline-block;
+  color: $color-primary;
+  font-size: 16px;
+  padding-right: 30px;
+  padding-top: 10px;
+  line-height: 1;
+  margin: 0;
+}
+
+.wr-quest-item .foot-quest {
+  overflow: hidden;
+  height: 40px;
+  line-height: 32px;
+  background: darken(#fff, 7%);
+  border-top: 1px solid darken(#fff, 12%);
+}
+
+.foot-quest .reproduction-tags-2 {
+  margin-left: 4px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.foot-quest .reproduction-down-lite {
+  color: $color-hgroup;
+  font-size: 7px;
+  line-height: 1;
+  @extend .transition-transform;
+
+}
+
+.wr-down-lite {
+  display: none;
+  float: left;
+  padding-left: 35px;
+  @extend .translate3d;
+}
+
+.foot-quest .reproduction-down-lite.active {
+  @include rotate(-180deg);
+}
+
+/***********************************************
+checkbox
+***********************************************/
+#filter-questions div, #filter-questions {
+  display: inline-block;
+  position: relative;
+}
+
+#filter-questions [type="checkbox"]:not(:checked),
+#filter-questions [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+#filter-questions [type="checkbox"]:not(:checked) + label,
+#filter-questions [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    padding-left: 28px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/* checkbox aspect */
+#filter-questions [type="checkbox"]:not(:checked) + label:before,
+#filter-questions [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 19px;
+  height: 19px;
+  border: 1px solid darken(#fff, 20%);
+  background: darken(#fff, 0.3%);
+  border-radius: 1px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    top: -2px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/* checked mark aspect */
+#filter-questions [type="checkbox"]:not(:checked) + label:after,
+#filter-questions [type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: -1px;
+  left: 4px;
+  font-size: 19px;
+  line-height: 0.8;
+  color: #4880c5;
+  @extend .transition-all;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    top: 2px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/* checked mark aspect changes */
+#filter-questions [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  @include scale(0);
+}
+
+#filter-questions [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  @include scale(1);
+}
+
+#filter-questions [type="checkbox"]:checked:focus + label:before,
+#filter-questions [type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted #4880c5;
+}
+
+/* hover style just for information */
+#filter-questions label:hover:before {
+  border: 1px solid #4880c5 !important;
+}
+
+#filter-questions label {
+  position: relative;
+  color: $color-hgroup;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 18px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+
+}
+
+#filter-questions div {
+  padding: 4px 10px 0;
+  height: 24px;
+  line-height: 24px;
+}
+
+/***********************************************
+More
+***********************************************/
+.count-block {
+  min-height: 250px;
+  padding-top: 10px;
+  @include breakpoint($small-min) {
+    min-height: 270px;
+  }
+  @include breakpoint($small) {
+    min-height: 300px;
+  }
+  @include breakpoint($medium) {
+    padding-top: 20px;
+    min-height: 500px;
+  }
+  @include breakpoint($large) {
+    min-height: 550px;
+  }
+  @include breakpoint($large-xl) {
+    min-height: 600px;
+  }
+}
+
+.modal-sp {
+  text-decoration: underline;
+  font-size: 18px;
+  color: $color-hgroup;
+  cursor: pointer;
+  @extend .CompPro-Regulap;
+}
+
+.more-btn {
+  display: inline-block;
+  position: relative;
+  background: darken(#F7F7F7, 10%);
+  padding: 13px 25px 15px;
+  color: $color-hgroup;
+  font-size: 16px;
+  border: 1px solid darken(#F7F7F7, 11%);
+  line-height: 1;
+  cursor: pointer;
+  @extend .transition-bg;
+}
+
+.more-btn:hover {
+  background: darken(#F7F7F7, 20%);
+}
+
+.quest-btn-add {
+  float: right;
+}
+
+.modal-btn-more {
+  padding: 13px 25px 15px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  box-shadow: none;
+  text-transform: inherit;
+  background: $color-hover-menu;
+  border: 1px solid darken($color-hover-menu, 3%);
+  cursor: pointer;
+  @extend .pt-sans-narrow;
+  @extend .transition-bg;
+}
+
+.modal-btn-more:hover {
+  background: $color-hover-menu-active;
+}
+
+/***********************************************
+SVG
+***********************************************/
+#filter-svg {
+  position: absolute;
+  top: 3px;
+  left: 50px;
+  display: inline-block;
+  fill: lighten($bg-header-menu, 20%);
+  width: 20px;
+  height: 16px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    top: 5px;
+    left: 65px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.filter-svg-p {
+  fill: lighten($bg-header-menu, 20%);
+  stroke-width: 0;
+}

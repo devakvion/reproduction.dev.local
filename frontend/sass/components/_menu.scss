@@ -1,0 +1,795 @@
+@charset "UTF-8";
+/***********************************************
+Navigation Top
+***********************************************/
+#navigation-desktop {
+  display: none;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    display: block;
+  }
+  @include breakpoint($large) {
+
+  }
+
+}
+
+.wr-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  max-width: $max-width-site;
+  min-width: $min-width-site;
+  height: $menu-main-top-info-height-tablet;
+  background-color: $bg-header-menu;
+  text-align: right;
+  margin: 0 auto;
+  z-index: 100;
+  overflow: visible;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    height: $menu-main-top-info-height-desktop;
+  }
+}
+
+#navigation {
+  width: 100%;
+  height: 100%;
+  max-width: $max-width-container;
+  min-width: $min-width-container;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding: 0;
+  @include breakpoint($medium) {
+    width: 100%;
+  }
+  @include breakpoint($large) {
+    padding-left: 30px;
+  }
+  @include breakpoint($large-l) {
+    width: 92%;
+    padding-left: 0;
+  }
+}
+
+/*logo*/
+#logo-left {
+  display: inline-block;
+  float: left;
+  padding-top: 15px;
+  @include breakpoint($medium) {
+    padding-left: 10px;
+  }
+  @include breakpoint($large) {
+    padding-left: 0;
+  }
+}
+
+.logo-main img {
+  width: 90px;
+  height: auto;
+  @extend .transition-width;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    width: 60px;
+  }
+  @include breakpoint($medium) {
+    width: 60px;
+    margin-left: 30px;
+  }
+  @include breakpoint($large) {
+    width: 90px;
+    margin-left: 0;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/*end logo*/
+.main-list-menu, .dropdown {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+}
+
+.main-list-menu {
+  //@include translate(0, 0);
+  // float: right;
+
+}
+
+.main-list-menu > li {
+  position: static;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  background-color: $bg-header-menu;
+}
+
+.main-list-menu .where-to-buy {
+ // margin-left: 20px;
+  @include breakpoint($menu-media) {
+   // margin-left: 20px;
+  }
+  @include breakpoint($large) {
+    margin-left: 20px;
+  }
+  @include breakpoint($large-l) {
+    margin-left: 50px;
+  }
+}
+
+.main-list-menu .where-to-buy, .main-list-menu .search-link {
+  background-color: $color-hover-menu;
+  @extend .transition-bg;
+}
+
+.main-list-menu > li:hover, .main-list-menu > li:hover > .item-link-menu:not(.not-li) {
+  background-color: $color-hover-menu;
+  z-index: 2;
+}
+
+.main-list-menu .where-to-buy:hover, .main-list-menu .search-link:hover {
+  background-color: $color-hover-menu-active;
+}
+
+.main-list-menu > li:hover .item-link-menu::before {
+  background-color: transparent;
+}
+
+.item-link-menu {
+  position: relative;
+  display: inline-block;
+  color: $color-white-menu;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 13px;
+  padding: 18px 13px 0;
+  z-index: 2;
+  cursor: pointer;
+  @extend .transition-bg;
+  @extend .CompPro-Regulap;
+  @include breakpoint($medium) {
+    font-size: 12px;
+  }
+  @include breakpoint($large) {
+    font-size: 14px;
+    padding: 21px 15px 0;
+  }
+  @include breakpoint($large-l) {
+    font-size: 15px;
+    padding: 21px 15px 0;
+  }
+}
+
+.item-link-menu:not(.not-li):hover {
+  background-color: $color-hover-menu;
+}
+
+.search-link .item-link-menu {
+  padding-top: 15px;
+}
+
+.search-link .item-link-menu i {
+  font-size: 23px;
+  @include breakpoint($large) {
+    font-size: 27px;
+  }
+}
+
+.item-link-menu:not(.not-before)::before {
+  content: "";
+  position: absolute;
+  top: 37%;
+  right: -1px;
+  width: 1px;
+  height: 25%;
+  background-color: $color-menu-border;
+  z-index: 0;
+  @include transition(background 0.2s);
+  @include breakpoint($large) {
+    top: 34%;
+    height: 30%;
+  }
+}
+
+.where-to-buy .item-link-menu::before {
+  background-color: $color-white-darken;
+}
+
+.where-to-buy a span {
+  display: none;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large-l) {
+    display: inline-block;
+  }
+
+}
+
+.where-to-buy a i.reproduction-buy {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 2px;
+  margin-left: 2px;
+  @include breakpoint($large-l) {
+    display: none;
+  }
+
+}
+
+.search-link .item-link-menu::before {
+  background-color: transparent;
+}
+
+.has-down-icon i {
+  font-size: 3px;
+  margin-left: 3px;
+  vertical-align: middle;
+  @extend .transition-all;
+
+  @include breakpoint($large) {
+    font-size: 4px;
+  }
+}
+
+.has-dropdown:hover .has-down-icon i {
+  @include rotate(180deg);
+}
+
+.item-link-menu.has-down-icon::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  bottom: 0;
+  height: 7px;
+  width: 27px;
+  opacity: 0;
+  @include translate(0, 4px);
+  background: url("/img/dashboard/triangle-menu.svg") no-repeat bottom;
+  background-size: contain;
+}
+
+.has-dropdown:hover > .item-link-menu.has-down-icon::after {
+  @include translate(0, 0);
+  opacity: 1;
+  @include transition(all 0.2s ease-in-out 0.05s);
+}
+
+.has-dropdown:hover > .wr-dropdown {
+  height: auto;
+  opacity: 1;
+
+}
+
+.has-dropdown:hover > .border-wr-dropdown {
+  height: 100%;
+}
+
+.has-dropdown:hover > .wr-dropdown-list {
+  //@include scale(1);
+
+}
+
+.wr-dropdown {
+  position: absolute;
+  left: 0;
+  top: $menu-main-top-info-height-tablet;
+// height: auto;
+ // opacity: 1;
+  height: 0;
+  opacity: 0;
+  width: 100%;
+  background-color: $bg-menu-top;
+  overflow: hidden;
+  @extend .transition-all;
+  @extend .z-depth-1;
+  @include breakpoint($large) {
+    top: $menu-main-top-info-height-desktop;
+  }
+}
+
+.wr-dropdown::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1%;
+  background-color: darken($bg-menu-top, 20%);
+  @include breakpoint($medium) {
+    width: 1.5%;
+  }
+  @include breakpoint($large-xl) {
+    width: 2%;
+  }
+
+}
+
+.wr-dropdown-list {
+  position: relative;
+  width: 100%;
+  max-width: $max-width-container;
+  min-width: $min-width-container;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+ // @include scale(0.99);
+  padding: 25px 20px 35px;
+ // @include transition(transform 0.4s ease-in-out);
+  @include breakpoint($large) {
+    padding: 30px 20px 40px;
+  }
+}
+
+.dropdown .title-problem {
+  padding-left: 32px;
+  clear: none;
+  margin-bottom: 15px;
+  @include breakpoint($large) {
+    padding-left: 40px;
+    height: 36px;
+    padding-top: 4px;
+    margin-bottom: 8px;
+  }
+  @include breakpoint($large-xl) {
+    padding-left: 44px;
+    height: 40px;
+    padding-top: 7px;
+    margin-bottom: 8px;
+  }
+}
+
+.list-problem {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  padding: 0 15px;
+  @include breakpoint($large) {
+    padding: 0 20px;
+  }
+}
+
+.list-problem:not(.last-list-problem)::after {
+  content: "";
+  position: absolute;
+  top: 26%;
+  right: 0;
+  width: 1px;
+  height: 60%;
+  background-color: #cfcfcf;
+}
+
+.title-problem-list {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-bottom: 1px;
+  font-weight: normal;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  color: darken($color-hgroup, 8%);
+ // @extend .BebasNeueBold;
+  @extend .CompPro-Regulap;
+  @include breakpoint($large) {
+    font-size: 16px;
+  }
+  @include breakpoint($large-xl) {
+    font-size: 17px;
+  }
+}
+
+/*.title-problem-list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 1px;
+  background-color: #919795;
+}*/
+
+.dropdown, .title-problem, .title-problem-list, .dropdown a span {
+  @extend .position-relative;
+}
+
+.dropdown li {
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.dropdown a {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: lighten($color-hgroup,10%);
+  font-size: 13px;
+  padding-bottom: 2px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  @extend .CompPro-Regulap;
+ // @extend .CompPro-Regulap;
+
+  // @extend .translate3d;
+  @include breakpoint($large) {
+    //letter-spacing: 1px;
+    font-size: 14px;
+  }
+  @include breakpoint($large-xl) {
+    font-size: 15px;
+  }
+}
+
+.dropdown a span {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  // padding-bottom: 2px;
+  // @extend .translate3d;
+}
+
+.dropdown a > span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #808684;
+  @extend .transition-width;
+}
+
+.dropdown a:hover > span::after {
+  width: 60%;
+}
+
+/***********************************************
+Icon Menu
+***********************************************/
+
+.title-problem i {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  font-size: 27px;
+  color: $color-age-darken;
+  @include breakpoint($large) {
+    font-size: 32px;
+  }
+  @include breakpoint($large-xl) {
+    font-size: 36px;
+  }
+}
+
+.title-problem img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: auto;
+  color: $color-age-darken;
+  @include breakpoint($large) {
+    width: 31px;
+  }
+  @include breakpoint($large-xl) {
+    width: 35px;
+  }
+}
+
+/*Product List CSS*/
+
+.link-product {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-hgroup;
+  font-weight: normal;
+  font-size: 15px;
+ // @extend .CompPro-Regulap;
+  //@extend .Roboto;
+  @extend .CompPro-Regulap;
+  @include breakpoint($large) {
+    font-size: 17px;
+  }
+}
+#product-menu .link-product{
+  font-size: 15px;
+}
+.list-product {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.link-product .reproduction-drugs-logo {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 35px;
+  height: auto;
+}
+.link-product .reproduction-drugs-logo.pregnoton_mama{
+  width: 30px;
+  height: auto;
+  top:-1px;
+}
+
+
+.link-product .reproduction-drugs-logo.speroton {
+  height: 18px;
+  width: auto;
+  top: 9px;
+  left: -45px;
+}
+
+.link-product .reproduction-drugs-logo.sinergin {
+  width: 32px;
+}
+
+.reproduction-drugs-logo.cystenium {
+  width: 30px;
+}
+
+//
+.ul-list-product {
+  display: inline-block;
+  text-align: left;
+}
+
+.title-product {
+  display: inline-block;
+  padding-left: 38px;
+  padding-bottom: 2px;
+  @extend .position-relative;
+}
+
+.title-product.color-sinergin {
+  padding-left: 39px;
+}
+
+.title-product.color-speroton {
+  padding-left: 35px;
+}
+
+.title-product::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  /*  background-color: #919795;*/
+  @extend .transition-width;
+}
+
+.title-product.color-cystenium::after {
+  background: #E1498B;
+}
+
+.title-product.color-mence::after {
+  background: #B987BC;
+}
+
+.title-product.color-pregnoton::after {
+  background: #91D2CD;
+}
+
+.title-product.color-speroton::after {
+  background: #163B62;
+}
+
+.title-product.color-sinergin::after {
+  background: #80ADE0;
+}
+
+.ul-list-product li {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  @include breakpoint($large) {
+    padding: 0 20px;
+  }
+  @include breakpoint($large-xl) {
+    padding: 0 25px;
+  }
+}
+
+.ul-list-product li:not(.last-li-product)::after {
+  content: " ";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 1px;
+  height: 50%;
+  background-color: #cfcfcf;
+}
+
+.ul-list-product li:hover .title-product::after {
+  width: 100%;
+}
+
+/*Search Form*/
+#search-wr {
+  text-align: center;
+}
+
+.input-search {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 60%;
+
+  @include breakpoint($large) {
+    width: 40%;
+  }
+
+}
+
+.wr-fa-search {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: auto;
+  height: 100%;
+}
+
+.wr-btn-search {
+  width: 48px;
+  height: 50px;
+}
+
+input.search {
+  width: 100%;
+  padding: 5px 100px 5px 0;
+  margin: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #c8cecc;
+  outline: 0;
+  background: transparent;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: $color-primary;
+  @extend .CompPro-Regulap;
+  //@extend .CompPro-Regulap;
+  @include breakpoint($large) {
+    font-size: 24px;
+  }
+
+}
+
+.btn-search, .btn-times {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 46px;
+  outline: 0;
+  border: none;
+  z-index: 2;
+  background: transparent;
+}
+
+.btn-search:hover + i {
+  color: $color-primary;
+}
+
+.btn-times:hover + i {
+  color: $color-primary;
+}
+
+.search-go {
+  float: left;
+}
+
+.close-search {
+  float: right;
+  @extend .stop-element;
+}
+
+.close-search i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  font-size: 22px;
+  color: grey;
+  cursor: pointer;
+  z-index: 1;
+  @extend .stop-element;
+  @extend .transition-color;
+}
+
+.search-go i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+  font-size: 30px;
+  color: grey;
+  cursor: pointer;
+  z-index: 1;
+  @extend .transition-color;
+}
+
+.two-txt {
+  margin-top: 5px;
+}
+/*#wr-dropdown-search{
+  display: none;
+}*/
+/***********************************************
+Социальные сети
+***********************************************/
+.soc-net{
+  color: #3e414e;
+  font-family: PFDinTextCompProRegular,sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+.phone-help-top br{
+  margin-bottom: 7px;
+}
+.soc-net i{
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  opacity: .7;
+  margin-right: 3px;
+  @extend .transition-opacity;
+}
+.soc-net:hover i{
+  opacity: 1;
+}
+.instagram-ic{
+  background: url("/img/dashboard/instagram.png") no-repeat center;
+  background-size: contain;
+}

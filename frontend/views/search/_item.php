@@ -1,0 +1,1 @@
+<p class="search-txt"><a href="<?= $model['slug'] ?>"><?= $model['title'] ?> <i class="reproduction-arrow-r"></i></a></p>

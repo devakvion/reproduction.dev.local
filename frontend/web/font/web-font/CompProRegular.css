@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "false";
+    src: url("CompProRegular.eot");
+    src: url("CompProRegular.eot?#iefix") format("embedded-opentype"),
+         url("CompProRegular.woff") format("woff"),
+         url("CompProRegular.ttf") format("truetype"),
+         url("CompProRegular.svg#false") format("svg");
+    font-weight: false;
+    font-style: false;
+}

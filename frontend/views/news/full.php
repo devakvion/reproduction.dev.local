@@ -1,0 +1,1 @@
+<div style="margin: 100px;">Новость</div>

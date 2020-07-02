@@ -1,0 +1,123 @@
+/***********************************************
+Oleg
+***********************************************/
+.publishing-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.padding-none-left {
+  padding-left: 0;
+}
+
+.main-nav__link {
+  font-size: 12px;
+}
+
+.gallery-jewelry {
+  padding: 20px 30px;
+}
+.note-gallery-jewelry{
+  display: block;
+  margin: 10px 0;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+/***********************************************
+Maxim
+***********************************************/
+#content-ajax, #submit-error, #submit-success, #file-type-error {
+  display: none;
+}
+
+.loader-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  border-radius: 50%;
+}
+
+.page-upload-img {
+  max-height: 240px;
+}
+
+#content article.widget, #items-list.widget {
+  margin: 0;
+  border: 0;
+}
+
+#items-list {
+  position: relative;
+  display: block;
+}
+
+.grid-view th a {
+  color: #ffffff;
+}
+
+.textarea {
+  line-height: 1.8;
+}
+
+.tabs__content-wr {
+  margin-top: 40px;
+}
+
+.tabs__content-item {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.tabs-wr label.tabs__tab {
+  font-size: 10px;
+  padding: 20px 16px;
+}
+
+.gallery-item {
+  float: left;
+  width: 220px;
+  height: 190px;
+  overflow: hidden;
+  margin: 0 15px 15px 0;
+  padding: 20px 20px 40px 20px;
+}
+//
+.gallery-item.gallery-about{
+  padding: 10px 10px 10px 20px;
+  height: 120px;
+}
+.gallery-item .remove:hover {
+  color: #bf0000;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gallery-img-form .sortable {
+  border: none;
+}
+
+.active label {
+  display: inline-block;
+  //font-family: "open_sansregular";
+  font-size: 14px;
+  margin-right: 20px;
+  margin-top: -5px;
+}
+
+.switch::before {
+  content: "net";
+}
+
+input:checked + .switch::before {
+  content: "da";
+}
+
+#section-ajax {
+  display: block;
+  width: 100%;
+}

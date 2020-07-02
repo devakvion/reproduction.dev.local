@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "compass/css3/images";
+@import "compass/css3/transition";
+@import "compass/css3";
+@import "breakpoint";
+@import "toolkit";
+@import "singularitygs";
+@import "compass/css3/animation";
+//@import "animate";
+
+
+$legacy-support-for-ie9: true !default;
+$graceful-usage-threshold: 0.1 !default;
+/***********************************************
+Mixins
+***********************************************/
+//@import "components/prefixer";
+@import "components/mixins";
+//@import "components/color";
+/***********************************************
+Variables
+***********************************************/
+@import "components/variables";
+/***********************************************
+Components
+***********************************************/
+
+@import "components/normalize";
+@import "components/fonts";
+@import "components/icons";
+
+@import "components/help";
+@import "components/main";
+@import "components/typography";
+@import "components/svg";
+@import "components/problem";
+@import "components/menu";
+@import "components/menuMobile";
+@import "components/mainSlider";
+@import "components/drug";
+@import "components/faq";
+@import "components/purchase";
+@import "components/error";
+@import "components/search";
+@import "components/news";
+@import "components/footer";
+@import "components/buttons";
+@import "components/form";
+@import "components/fotorama";
+@import "components/tooltip";
+@import "components/review";
+@import "components/specialist";
+@import "components/oldBrowser";
+
+
+
+
+

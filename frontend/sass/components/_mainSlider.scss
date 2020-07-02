@@ -1,0 +1,367 @@
+.fotorama-wr-main {
+  margin-top: 0;
+  border-bottom: 1px solid;
+  border-color: $bg-menu-top;
+  min-height: 360px;
+  @include breakpoint($medium) {
+    min-height: 380px;
+    margin-top: 55px;
+  }
+  @include breakpoint($large) {
+    margin-top: 60px;
+  }
+
+}
+
+.slider-section-left {
+  position: relative;
+  height: 100%;
+  text-align: right;
+  @include grid-span(8, 1);
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    @include grid-span(7, 1);
+  }
+  @include breakpoint($medium) {
+    //@include grid-span(6, 1);
+  }
+  @include breakpoint($large) {
+    @include grid-span(6, 1);
+  }
+
+}
+
+.slider-section-right {
+  height: 100%;
+  @include grid-span(12, 1);
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    @include grid-span(6, 7);
+  }
+  @include breakpoint($large) {
+
+  }
+
+}
+
+/***********************************************
+Phone Help
+***********************************************/
+.phone-help-top {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  text-align: left;
+  z-index: 10;
+  @include breakpoint($small) {
+    left: 30px;
+  }
+  @include breakpoint($medium) {
+    left: 0;
+  }
+  @include breakpoint($large) {
+    //top: 25px;
+  }
+}
+
+.phone-help-top-item {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: $color-phone;
+  -webkit-appearance: none;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small-min) {
+    font-size: 25px;
+  }
+  @include breakpoint($small) {
+    ///font-size: 26px;
+  }
+  @include breakpoint($large) {
+   //font-size: 27px;
+  }
+  @include breakpoint($large-xl) {
+   // font-size: 30px;
+  }
+}
+
+.fotorama__stage__frame .phone-help-top-item i {
+  font-size: 15px;
+  vertical-align: top;
+  margin-top: -2px;
+  @extend .translate3d;
+  @include breakpoint($medium) {
+    font-size: 20px;
+    margin-top: -1px;
+  }
+  @include breakpoint($large) {
+    font-size: 21px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.fotorama__stage__frame.fotorama__active .phone-help-top-item i {
+  @include animation(tada 1s 2 linear 3s);
+}
+
+/***********************************************
+TXT
+***********************************************/
+.content-slider-left {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 0;
+  margin-top: -40px;
+  padding-left: 20px;
+  @include breakpoint($small-min) {
+    top: 48%;
+  }
+  @include breakpoint($small) {
+    top: 43%;
+  }
+  @include breakpoint($medium) {
+    top: 39%;
+  }
+  @include breakpoint($large) {
+    top: 40%;
+  }
+  @include breakpoint($large-xl) {
+    padding-right: 30px;
+  }
+}
+
+.fotorama__stage__frame .animate-hgroup {
+  opacity: 0;
+  @include translate(-30px, 0);
+  @include transition(all 1s ease-in-out);
+  @extend .translate3d;
+}
+
+//.fotorama__stage__frame.fotorama__active
+
+.fotorama__stage__frame.fotorama__active .animate-hgroup {
+  opacity: 1;
+  @include translate(0, 0);
+  //@include animation(leftIn 1s linear);
+}
+
+//.fotorama__stage__frame.fotorama__active
+.fotorama__stage__frame .sub-title-slider {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1;
+  opacity: 0;
+  @include transition(opacity 0.7s ease 0.5s);
+  @include breakpoint($small-min) {
+    font-size: 18px;
+  }
+  @include breakpoint($small) {
+    font-size: 20px;
+  }
+  @include breakpoint($medium) {
+    font-size: 21px;
+  }
+  @include breakpoint($large) {
+    font-size: 22px;
+  }
+  @include breakpoint($large-xl) {
+    font-size: 25px;
+  }
+}
+
+.fotorama__stage__frame.fotorama__active .sub-title-slider {
+  opacity: 1;
+}
+
+//1s linear 0s infinite alternate
+/***********************************************
+SVG
+***********************************************/
+.wr-svg-slider {
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  right: -60px;
+  @include breakpoint($small) {
+    right: -65px;
+  }
+  @include breakpoint($medium) {
+    right: -80px;
+  }
+  @include breakpoint($large) {
+    right: -100px;
+  }
+  @include breakpoint($large-xl) {
+    right: -130px;
+  }
+}
+
+.svg-slider-category {
+  width: 50px;
+  height: 50px;
+  fill: none;
+  stroke: $header-color;
+  stroke-width: 2px;
+  @extend .translate3d;
+  @include breakpoint($small) {
+    width: 55px;
+    height: 55px;
+  }
+  @include breakpoint($medium) {
+    width: 65px;
+    height: 65px;
+  }
+  @include breakpoint($large) {
+    width: 80px;
+    height: 80px;
+  }
+  @include breakpoint($large-xl) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.none-stroke {
+  stroke: rgba(255, 255, 255, 0);
+  stroke-width: 4px;
+  opacity: 0;
+}
+
+#obturateur4 {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+/***********************************************
+Touchpad Help
+***********************************************/
+/*
+.touchpad-help {
+  display: inline-block;
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  z-index: 4;
+  @include breakpoint($small-min) {
+    right: 40px;
+  }
+  @include breakpoint($medium) {
+    right: 60px;
+  }
+  @include breakpoint($large) {
+    right: 70px;
+  }
+  @include breakpoint($large-xl) {
+    right: 80px;
+  }
+}
+
+.touchpad-help .reproduction-tach_help {
+  font-size: 35px;
+  color: $color-hgroup;
+  opacity: 0;
+  @include animation(touchHelp 3s linear 3.6s);
+}
+
+#human-view-mobile .reproduction-tach_help {
+  font-size: 35px;
+  color: $color-hgroup;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -17px;
+  margin-top: -17px;
+  font-weight: normal;
+  opacity: 0;
+}
+
+#human-view-mobile .reproduction-tach_help.active {
+  @include animation(touchHelp 2.2s linear);
+}
+
+.reproduction-touch2 {
+  position: absolute;
+  color: $color-hgroup;
+  font-weight: normal;
+  font-size: 0;
+  bottom: 35px;
+  left: 50%;
+  margin-left: -17px;
+  opacity: 0;
+}
+
+.animatedHelp {
+  @include animation(flipOutX 3s both .2s);
+
+}
+*/
+
+/***********************************************
+Help Down
+***********************************************/
+/*#wr-down-content {
+  position: absolute;
+  bottom: 27px;
+  left: 4%;
+  display: none;
+  z-index: 4;
+  @include breakpoint($medium) {
+    display: block;
+  }
+}
+
+#wr-down-content i {
+  display: block;
+  font-size: 10px;
+  color: darken($bg-intermediate-white, 17%);
+  @include transition(color 0.5s);
+}
+
+#wr-down-content .down.active {
+  color: darken($bg-intermediate-white, 45%);
+}*/
+
+/*.wr-down-content.active .down3 {
+  @include transition(color 0.3s ease-in-out 0.6s);
+}*/
+
+/***********************************************
+Keyboard Help
+***********************************************/
+/*.wr-keyboard {
+  position: absolute;
+  bottom: 27px;
+  right: 4%;
+  display: none;
+  z-index: 4;
+}
+
+#keyboard-svg {
+  width: 75px;
+  height: auto;
+
+}
+
+.keyboard-svg-1 {
+  fill: darken($bg-intermediate-white, 35%);
+}
+
+.keyboard-svg-2 {
+  fill: darken($bg-intermediate-white, 35%);
+  @include transition(all 0.4s);
+}
+
+.keyboard-svg-2.active {
+  fill: darken($bg-intermediate-white, 60%);
+}*/

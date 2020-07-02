@@ -1,0 +1,108 @@
+.bg-header-top-news {
+  background: url("/img/news/news_bg") no-repeat center;
+  background-size: cover;
+  @extend .transition-all;
+}
+
+.news-it-l {
+  margin-bottom: 30px;
+}
+
+.nws-item {
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  margin-top: 5px;
+  border: 1px solid darken(#F7F7F7, 5%);
+}
+
+.ic-nws {
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  width: 34px;
+  height: 34px;
+  background: url("/img/news/news.svg") no-repeat center;
+  background-size: contain;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    top: 50%;
+    left: -19px;
+    right: auto;
+    margin-top: -30px;
+    width: 38px;
+    height: 38px;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+
+}
+
+.nws-item p {
+  color: $color-primary;
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 15px 10px 20px 10px;
+  margin-bottom: 15px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    padding: 20px 20px 20px 30px;
+    font-size: 17px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.footer-nws {
+  width: 100%;
+  line-height: 30px;
+  height: 30px;
+  text-align: right;
+  padding-right: 30px;
+  background: darken(#F7F7F7, 7%);;
+}
+
+.date-nws {
+  color: $color-hgroup;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  @extend .CompPro-Regulap;
+}
+
+/***********************************************
+PDF
+***********************************************/
+.pdf-open {
+  display: inline-block;
+  margin: -14px 30px 10px;
+  opacity: .9;
+  @extend .transition-opacity;
+}
+.pdf-open:hover{
+  opacity: 1;
+}
+.pdf-open img {
+  width: 25px;
+  height: auto;
+  margin-right: 5px;
+}

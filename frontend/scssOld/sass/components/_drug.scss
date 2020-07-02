@@ -1,0 +1,800 @@
+@charset "UTF-8";
+/***********************************************
+SVG Header
+***********************************************/
+.none-drugs-str {
+  stroke-width: 2px;
+  stroke: rgba(255, 255, 255, 0);
+}
+
+/***********************************************
+Header
+***********************************************/
+.bg-header-top-drugs {
+  background-color: #F3F5F8;
+}
+
+.right-header img {
+  max-width: 65%;
+}
+
+.right-header {
+  padding-left: 40px;
+}
+
+/***********************************************
+Background Img Top
+***********************************************/
+/*.bg-52 {
+  background: url("/img/drugs/drugs-item/10.jpg") no-repeat center;
+  background-size: cover;
+}*/
+//
+/*.bg-53 {
+  background: url("/img/drugs/drugs-item/5.jpg") no-repeat center;
+  background-size: cover;
+}*/
+
+/***********************************************
+Img Top Mobile
+***********************************************/
+.img-top-mob {
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 290px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+ Цистениум IMG
+***********************************************/
+.wr-cis {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  float: none;
+  margin: 0 0 15px 0;
+  text-align: center;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.wr-cis p {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  @include breakpoint($medium) {
+    display: block;
+    width: auto;
+  }
+}
+
+.wr-cis img {
+  max-width: 160px;
+  margin: 0 auto 5px;
+  display: inline-block;
+  @include breakpoint($small-min) {
+    max-width: 170px;
+  }
+  @include breakpoint($small) {
+    max-width: 180px;
+  }
+  @include breakpoint($medium) {
+    margin: 0;
+    float: left;
+  }
+}
+
+.p-img-ci, .pad-ci {
+  padding: 0 20px;
+}
+
+.cis-3-img {
+  display: inline-block;
+  max-width: 33.333%;
+  height: auto;
+  padding: 0;
+  @include breakpoint($large) {
+    padding: 0 10px;
+  }
+  @include breakpoint($large-xl) {
+    padding: 0 30px;
+  }
+}
+
+.wr-cis-full {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.wr-cis-full div, .wr-cis-full img {
+  float: left;
+}
+
+.l-3img {
+  width: 33.333%;
+}
+
+.wr-cis.kl-desk-wr {
+  @include breakpoint($medium) {
+    display: inline-block;
+    float: right;
+  }
+  @include breakpoint($large) {
+  }
+  @include breakpoint($large-xl) {
+  }
+}
+
+.kl-desk-wr.wr-cis img {
+  margin-right: 20px;
+}
+
+.last--p {
+  @include breakpoint($large-xl) {
+    margin-top: 90px;
+  }
+}
+
+.ot-left p {
+  @include breakpoint($medium) {
+    padding-left: 25px;
+    margin-bottom: 8px;
+  }
+  @include breakpoint($large) {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+Состав
+***********************************************/
+.list-article.gmo li {
+  list-style: none;
+  padding-left: 38px;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.list-article.gmo li.сarnipure-li {
+  margin-bottom: 15px;
+}
+
+.list-article.gmo img {
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  left: 0;
+  width: 28px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.list-article.gmo img.сarnipure {
+  //width: 28px;
+}
+
+.list-article.gmo {
+  margin-top: 5px;
+}
+
+/***********************************************
+Video
+***********************************************/
+.title-article.video-t {
+  height: 50px;
+  line-height: 50px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  @include breakpoint($medium) {
+    margin-top: -8px;
+  }
+  @include breakpoint($large) {
+    height: 65px;
+    line-height: 65px;
+    margin-top: -5px;
+    margin-bottom: 0;
+  }
+}
+
+.title-article.video-t {
+  font-size: 20px;
+  color: #505d83;
+}
+
+.title-article.video-t.sp-video {
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    margin-top: -5px;
+  }
+  @include breakpoint($large) {
+   // margin-bottom: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.video-play {
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 2px;
+  @include breakpoint($large) {
+    width: 50px;
+    height: 50px;
+    top: -11px;
+  }
+}
+
+#video-sek {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+#video-sek .fotorama {
+  height: 100%;
+}
+
+.video-play svg {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.pl-svg {
+  fill: #505d83;
+  @extend .transition-all;
+}
+
+.st-svg {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgba(255, 255, 255, 0);
+  @extend .transition-all;
+}
+
+.video-play.active .st-svg {
+  fill: #505d83;
+  stroke: #505d83;
+}
+
+.video-play.active .pl-svg {
+  fill: rgba(255, 255, 255, 0);
+}
+
+#video-sek .fotorama__video {
+  top: 0;
+}
+
+/*#video-sek .fotorama__img {
+  max-width: 80%;
+  height: auto;
+}*/
+
+.fotorama__video-close {
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  top: -35px;
+  right: 0;
+  z-index: 20;
+  opacity: 0;
+}
+
+#video-sek .fotorama__stage, #video-sek .fotorama {
+  overflow: visible;
+}
+
+/***********************************************
+Sinergin
+***********************************************/
+.ct-chart {
+  margin-bottom: 20px;
+}
+
+.chart-img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  max-width: 360px;
+}
+
+.img-tit-sin {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.txt-charts {
+  fill: #505465;
+}
+
+/***********************************************
+Сертификат Прием
+***********************************************/
+.sertif-dr {
+  font-size: 15px;
+}
+
+.reception-img {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/***********************************************
+TXT
+***********************************************/
+.small-note {
+  font-size: 90%;
+  opacity: 0.95;
+}
+
+.аttention-p {
+  font-size: 90%;
+}
+
+li p.small-note {
+  margin-bottom: 0;
+}
+
+.list-article li.list-st-none {
+  list-style: none;
+}
+
+/***********************************************
+Img Speroton
+***********************************************/
+.title-icon-problem {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  display: inline-block;
+  color: $color-hgroup;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-bottom: 5px;
+  // margin-left: 10px;
+  @extend .CompPro-Regulap;
+
+}
+
+.wr-all-icon-problem {
+  margin-top: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    padding-left: 15%;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.warn-wr-icon {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  margin: 25px 0 15px;
+  @extend .leare_fix;
+}
+
+.warn-wr-icon.lef-cen-warn {
+  margin-right: -20px;
+}
+
+.warn-wr-icon.cen-warn {
+  margin-left: -30px;
+}
+
+.item-icon-wr {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  text-align: left;
+}
+
+.img-icon-drugs {
+  position: relative;
+  display: inline-block;
+  max-width: 80px;
+  margin: 0 auto;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    max-width: 90px;
+  }
+  @include breakpoint($large-xl) {
+    max-width: 100px;
+  }
+}
+
+.bef-after-img {
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  float: left;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.bef-after-img::after, .bef-after-img::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 1px;
+  background: $color-line-txt;
+}
+
+.bef-after-img::after {
+  left: 4px;
+}
+
+.bef-after-img::before {
+  right: 4px;
+}
+
+.left-icon-note, .right-icon-note {
+  position: relative;
+  color: $bg-header-menu;
+  font-size: 16px;
+  line-height: 1;
+  float: left;
+  margin: 0;
+}
+
+/***********************************************
+List Img Pregnoton
+***********************************************/
+.wr-fc {
+  width: 100%;
+  margin-bottom: 10px;
+  @extend .leare_fix;
+}
+
+.wr-fc img {
+  float: left;
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.first-wr-fc {
+  margin-top: 10px;
+}
+
+.desc-fc {
+  display: block;
+}
+
+/***********************************************
+Animate Img Old
+***********************************************/
+#human-woman-img {
+  @include scale(0.94);
+  @extend .transition-transform;
+}
+
+#human-woman-img.view-active {
+  @include scale(1);
+}
+
+/***********************************************
+TXT
+***********************************************/
+.title-h5 {
+  font-size: 18px;
+  color: $color-hgroup;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 19px;
+  }
+  @include breakpoint($large) {
+    font-size: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+Charts
+***********************************************/
+.mar-charts {
+  margin-bottom: 30px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.sub_charts {
+  font-size: 1.15em;
+  color: #3e414e;
+  font-family: PFDinTextCompProRegular, sans-serif;
+  //@extend .pt-sans-narrow;
+  letter-spacing: .5px;
+  line-height: 1.1;
+  // text-transform: uppercase;
+  text-shadow: 0 0 0;
+  // @extend .easy-txt;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 1.3em;
+  }
+  @include breakpoint($large) {
+    font-size: 1.4em;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+
+}
+
+.bl-p-ch {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: -5px;
+  font-size: 1.2em;
+  line-height: 1.1;
+  color: #3e414e;
+  text-shadow: 0 0 0;
+  letter-spacing: .5px;
+  font-family: PFDinTextCompProRegular, sans-serif;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    margin-top: 25px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.fr-t {
+  margin-top: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    margin-top: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.img-charts {
+  //text-align: center;
+  width: 100%;
+  margin: 20px 0 15px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 2px;
+  @include breakpoint($small-min) {
+   // width: 95%;
+  }
+  @include breakpoint($small) {
+   // width: 90%;
+  }
+  @include breakpoint($medium) {
+   // width: 100%;
+  }
+  @include breakpoint($large) {
+    width: 70%;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.table-charts {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @include breakpoint($small-min) {
+   // width: 100%;
+  }
+  @include breakpoint($small) {
+    //width: 90%;
+  }
+  @include breakpoint($medium) {
+    margin-top: 30px;
+    //width: 100%;
+  }
+  @include breakpoint($large) {
+    width: 70%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+.table-charts .note-p-charts{
+  margin-top: -10px;
+}
+.table-charts table{
+  width: 100%;
+  margin-top: 15px;
+}
+.note-p-charts {
+  width: 100%;
+  font-size: .75em;
+  opacity: .9;
+  margin-bottom: 25px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    width: 80%;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    width: 70%;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.chart-item-img {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+}
+
+.text-padding {
+  padding-top: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    padding-top: 15px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+p.last-chart {
+  margin-top: 20px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    margin-top: 25px;
+  }
+  @include breakpoint($large) {
+    margin-top: 30px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+sin-compar
+***********************************************/
+#sin-compar p {
+  margin-bottom: 10px;
+}
+
+#sin-compar p b {
+  font-weight: 500;
+  text-shadow: 0 0 0;
+  font-family: PTSansNarrowRegular, sans-serif;
+}
+
+#sin-compar .list-article li {
+  margin-bottom: 3px;
+}

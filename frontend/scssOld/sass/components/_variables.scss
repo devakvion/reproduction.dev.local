@@ -1,0 +1,216 @@
+/***********************************************
+Media
+***********************************************/
+@include add-grid(12);
+@include add-gutter(0);
+@include add-gutter-style('split');
+$small-min: 480px;
+$small: 640px;
+$medium: 768px;
+$menu-media:800px;
+$large: 1023px;
+$large-l: 1100px;
+$large-xl: 1200px;
+$large-xxxl:1600px;
+/***********************************************
+Setting Site Main
+***********************************************/
+$max-width-site: 2000px;
+$min-width-site: 320px;
+$max-width-container: 1280px;
+$min-width-container: 320px;
+/***********************************************
+Colors Typography
+***********************************************/
+$color-hgroup: #3e414e;
+// #484b59;
+$color-primary: lighten($color-hgroup, 7%);
+$color-primary-lighten: lighten(#333b54, 8%);
+$color-white: #ffffff;
+$color-white-menu: darken($color-white, 1%) !default;
+$color-white-darken: darken($color-white, 20%) !default;
+$color-white-darken-after: darken($color-white, 23%) !default;
+$color-white-darken-after-up: darken($color-white, 15%) !default;
+$color-sub-title-slider-default: lighten($color-primary, 10%) !default;
+
+$color-age: #A58D75;
+
+//BG beige{
+$color-beige: #9d9d97;
+$color-beige-ot:#F7F7F7;///#FDFCFA;
+
+
+$border-color-beige:darken($color-beige,2%);
+$color-line-beige:darken($color-beige,6%);
+$color-beige-darken:darken($color-beige,20%);
+
+$bg-header-menu: #333b54;
+$base-color: lighten($color-hgroup, 5%);
+$header-color: lighten($bg-header-menu, 20%);
+$header-color-ligth: $base-color;
+$color-phone: $header-color-ligth;
+$color-nav-fotoramma: lighten($header-color-ligth, 20%);
+
+//Icon Note  #F8F7F2
+$color-icon-note: lighten(#787f8c,5%);
+$color-icon-note-first:lighten(#787f8c,5%);
+//#A58D75
+//$color-icon-note: #a2a4a0;
+//$color-icon-note-first:#a2a4a0;
+
+
+//Border Color
+$color-border-note: lighten($base-color, 55%);
+//Line Color
+$color-line-txt: lighten($base-color, 37%);
+//Color number
+$color-number: lighten($bg-header-menu, 3%);
+
+
+//footer
+$color-footer:darken($color-white,5%);
+$color-footer-darken:darken($color-white,25%);
+
+//bg-menu & section
+$bg-menu-top:lighten(#edeff4,2%);
+
+
+
+
+
+
+$color-info-top: #abb3cc;
+
+$color-conception-and-pregnancy: #fdd96c;
+//FDD96C
+$color-conception-and-pregnancy-darken: darken($color-conception-and-pregnancy, 15%) !default;
+
+$color-women-health: #fd5368;
+//E17986 #fd5368
+$color-women-health-darken: darken($color-women-health, 15%) !default;
+
+$color-men-s-health: #7381AC;
+//7CB9C4 #7cb9c4 //#7381AC
+$color-men-s-health-darken: darken($color-men-s-health, 15%) !default;
+
+$color-effects: #69d6a2;
+$color-effects-lighten: lighten($color-effects, 10%);
+
+$color-age: #A58D75;
+//A58D75  #ccbaa8
+$color-age-darken: darken($color-age, 20%) !default;
+
+$color-news-title: #A0D0D0;
+
+$color-title-slider-blue: #68759e;
+$color-women-health-title: lighten($color-women-health, 15%);
+
+//$color-icon-note:lighten($color-title-slider-blue,15%);//#78909c
+
+//Note Icon
+
+///Human Color
+$color-men-human: lighten(#68759e, 10%);
+$color-women-human: #4b5363;
+$border-fotorama-thumb:lighten($color-women-human, 35%);
+$color-wr-circle: #ffffff;
+//$color-icon-note:$color-title-slider-blue;
+//$primary-color-light: lighten($primary-color, 15%) !default;
+//$primary-color-dark: darken($primary-color, 10%) !default;
+
+/***********************************************
+BTN
+***********************************************/
+$button-border-color-blue: lighten($color-title-slider-blue, 10%);
+
+$button-color-white: darken($color-white, 8%);
+$button-border-color-white-hover: $color-white;
+
+$button-border-color-yellow: lighten($color-conception-and-pregnancy, 10%);
+$button-border-color-yellow-hover: $color-conception-and-pregnancy;
+
+//$button-color: $secondary-color !default;
+$button-color-disabled: #9F9F9F !default;
+$button-color-flat: #343434 !default;
+$button-color-raised: #FFF !default;
+$button-floating-size: 37px !default;
+$button-height: 36px !default;
+$button-font-size-shared: 1.3rem !default;
+$button-line-height: 36px !default;
+
+/***********************************************
+Bg Site
+***********************************************/
+$bg-icon-footer: #335571 !default;
+$bg-site-main: #FBFBFB;
+//$bg-site-grey: #fbfbfb;
+$bg-site-grey: #f1f0f5;
+$bg-intermediate-white: #ffffff;
+$bg-top-menu: $bg-site-grey;
+$bg-site-grey-border: #fcfcfc;
+
+$bg-line: #6c7a8c !default;
+$bg-border-block: #e9e9e9;
+$bg-item-list-menu: $bg-icon-footer;
+$bg-hover-menu: #0d3556 !default;
+$bg-facebook: #3b5998;
+$bg-twitter: #1dcaff;
+
+//$bg-info-top: #36364f;
+$bg-info-top: #323F4F;
+//$bg-dropdown-content: #36364f;
+$bg-dropdown-content: #4a515f;
+$bg-dropdown-content-lighten: lighten($bg-dropdown-content, 8%) !default;
+/***********************************************
+Menu Top
+***********************************************/
+
+$menu-main-top-info-height-desktop: 60px;
+$menu-main-top-info-height-tablet: 55px;
+$menu-main-top-info-height-mobile: 40px;
+
+$menu-main-item-height-desktop: 50px;
+$menu-main-item-height-tablet: 40px;
+$menu-main-item-height-mobile: 40px;
+
+$menu-main-height-desktop: 55px;
+$menu-main-height-tablet: 50px;
+$menu-main-height-mobile: 50px;
+
+$menu-main-width-right: 70px;
+$menu-main-width-bottom: 210px;
+
+
+$bg-header-menu-mobile: lighten($bg-header-menu, 7%);
+$color-title-menu: darken($bg-header-menu, 5%);
+$color-menu-txt: #37394c;
+$color-white-menu: darken($color-white, 5%);
+$color-menu-border: darken($color-white, 60%);
+$color-hover-menu: #5f98d7;
+//$color-hover-menu:#7381AC;
+$color-hover-menu-active: darken($color-hover-menu, 10%);
+
+$color-mobile-line: rgba(255, 255, 255, 0.06);
+
+$height-menu-mobile: 50px;
+/***********************************************
+Footer
+***********************************************/
+$footer-height: 40px;
+$card-padding: 20px !default;
+$card-bg-color: #fff !default;
+/***********************************************
+Fonts & Icons
+***********************************************/
+$marine: 'Marine', sans-serif;
+
+
+
+
+
+
+
+
+
+
+

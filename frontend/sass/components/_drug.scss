@@ -1,0 +1,1191 @@
+@charset "UTF-8";
+/***********************************************
+SVG Header
+***********************************************/
+.none-drugs-str {
+  stroke-width: 2px;
+  stroke: rgba(255, 255, 255, 0);
+}
+
+/***********************************************
+Header
+***********************************************/
+.bg-header-top-drugs {
+  background-color: #F3F5F8;
+}
+
+.right-header img {
+  max-width: 65%;
+}
+
+.right-header {
+  padding-left: 40px;
+}
+
+/***********************************************
+Background Img Top
+***********************************************/
+/*.bg-52 {
+  background: url("/img/drugs/drugs-item/10.jpg") no-repeat center;
+  background-size: cover;
+}*/
+//
+/*.bg-53 {
+  background: url("/img/drugs/drugs-item/5.jpg") no-repeat center;
+  background-size: cover;
+}*/
+
+/***********************************************
+Img Top Mobile
+***********************************************/
+.img-top-mob {
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 290px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+ Цистениум IMG
+***********************************************/
+.wr-cis {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  float: none;
+  margin: 0 0 15px 0;
+  text-align: center;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.wr-cis p {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  @include breakpoint($medium) {
+    display: block;
+    width: auto;
+  }
+}
+
+.wr-cis img {
+  max-width: 160px;
+  margin: 0 auto 5px;
+  display: inline-block;
+  @include breakpoint($small-min) {
+    max-width: 170px;
+  }
+  @include breakpoint($small) {
+    max-width: 180px;
+  }
+  @include breakpoint($medium) {
+    margin: 0;
+    float: left;
+  }
+}
+
+.p-img-ci, .pad-ci {
+  padding: 0 20px;
+}
+
+.cis-3-img {
+  display: inline-block;
+  max-width: 33.333%;
+  height: auto;
+  padding: 0;
+  @include breakpoint($large) {
+    padding: 0 10px;
+  }
+  @include breakpoint($large-xl) {
+    padding: 0 30px;
+  }
+}
+
+.wr-cis-full {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.wr-cis-full div, .wr-cis-full img {
+  float: left;
+}
+
+.l-3img {
+  width: 33.333%;
+}
+
+.wr-cis.kl-desk-wr {
+  @include breakpoint($medium) {
+    display: inline-block;
+    float: right;
+  }
+  @include breakpoint($large) {
+  }
+  @include breakpoint($large-xl) {
+  }
+}
+
+.kl-desk-wr.wr-cis img {
+  margin-right: 20px;
+}
+
+.last--p {
+  @include breakpoint($large-xl) {
+    margin-top: 90px;
+  }
+}
+
+.ot-left p {
+  @include breakpoint($medium) {
+    padding-left: 25px;
+    margin-bottom: 8px;
+  }
+  @include breakpoint($large) {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+}
+/***********************************************
+New Состав
+***********************************************/
+@charset "UTF-8";
+/***********************************************
+Table
+***********************************************/
+$color-table-tr: #d2d2d2;
+$header-table: #333b54;
+.rwd-table {
+  margin: 1em 0;
+  // min-width: 300px;
+  width: 100%;
+
+  // border-collapse: collapse;
+  border: 1px solid $color-table-tr;
+}
+
+.rwd-table .tr-cur {
+
+  font-style: italic;
+
+ // opacity: .85;
+}
+.rwd-table .tr-cur-first{
+  padding-left: 25px;
+}
+/*.tr-cur-name{
+   color: #313441;
+   font-weight: bold;
+ }*/
+.rwd-table tr {
+  border-top: 1px solid $color-table-tr;
+  border-bottom: 1px solid $color-table-tr;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+.rwd-table tr:nth-child(odd) {
+  background: #fff;
+}
+
+.rwd-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.rwd-table.table-sostav tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.rwd-table td {
+  // padding: 12px 20px 12px 7.5em;
+  overflow: hidden;
+  padding: 12px 20px;
+  display: block;
+ // color: lighten($color-p, 6%);
+  position: relative;
+  font-size: 18px;
+  line-height: 1.2;
+  // opacity: .95;
+  vertical-align: top;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    padding: 13px 20px;
+  //  color: $color-p;
+   // font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-right: 1px solid $color-table-tr;
+  }
+  @include breakpoint($large) {
+    padding: 14px 20px;
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+.rwd-table td span {
+  width: 50%;
+  float: right;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    width: auto;
+    float: none;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+.rwd-table td::before {
+  content: attr(data-th) " - ";
+  // width: 7em;
+  width: 50%;
+  padding-right: 20px;
+  float: left;
+  //margin-right: 20px;
+  display: inline-block;
+  // color: darken($main-color-1, 5%);
+  color: #5a5173;
+  //color: darken($main-color-1,8%);
+  height: 100%;
+  // position: absolute;
+  // left: 0;
+  // text-shadow: 0 0 0;
+  font-size: 17px;
+  // font-family: "OpenSans-Regular", sans-serif;
+ font-weight: normal;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    display: none;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+.rwd-table th, .rwd-table td {
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    display: table-cell;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+#footer-table th {
+  padding: 20px;
+}
+
+#header-table-mob th {
+  padding: 15px 20px;
+  font-size: .95em;
+  line-height: 1.1;
+}
+
+.icon-table {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.table-item-tlt {
+  padding-left: 30px;
+}
+
+.icon-table-item {
+  background-image: url("/themes/studio/assets/images/svg/ic-name-table-b.svg");
+}
+
+.rwd-table .header-table {
+  display: none;
+  background: $header-table !important;
+  font-family: "Panton-SemiBold", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    display: table-row;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+.header-table th {
+  padding: 15px 20px;
+  color: #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    // display: table-cell;
+  }
+  @include breakpoint($large) {
+    padding: 17px 20px;
+  }
+  @include breakpoint($large-l) {
+
+  }
+}
+
+.header-table th:last-child {
+  border-color: $header-table;
+}
+
+.rwd-table tr.header-table {
+  border: 1px solid $header-table;
+}
+
+/*#header-table-mob, #footer-table {
+  background: $header-table;
+  border: 1px solid $header-table;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Panton-SemiBold", sans-serif;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+    display: none;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-l) {
+
+  }
+
+}*/
+
+.header-table-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.rwd-table.table-sostav tr td:first-child{
+   @include breakpoint($small-min) {
+
+     }
+     @include breakpoint($medium) {
+       width: 25%;
+     }
+     @include breakpoint($large) {
+       width: 30%;
+     }
+
+
+}
+.table-sostav{
+  max-width: 1100px;
+  margin-bottom: 20px;
+   @include breakpoint($small-min) {
+
+     }
+     @include breakpoint($medium) {
+   margin-bottom: 40px;
+     }
+     @include breakpoint($large) {
+
+     }
+
+}
+/***********************************************
+
+***********************************************/
+/*#pregnotonMama-table .rwd-table td {
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    font-size: 14px;
+    padding: 13px 13px;
+  }
+  @include breakpoint($large-l) {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+}
+
+#pregnotonMama-table .header-table th {
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    padding: 17px 13px;
+    font-size: 15px;
+  }
+  @include breakpoint($large-l) {
+    padding: 17px 20px;
+    font-size: 16px;
+  }
+}*/
+/***********************************************
+Состав
+***********************************************/
+.list-article.gmo li {
+  list-style: none;
+  padding-left: 38px;
+  line-height: 1.1;
+  margin-bottom: 13px;
+}
+
+.list-article.gmo li.сarnipure-li {
+  margin-bottom: 15px;
+}
+
+.list-article.gmo img {
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  left: 0;
+  width: 28px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.list-article.gmo img.сarnipure {
+  //width: 28px;
+}
+
+.list-article.gmo {
+  margin-top: 5px;
+}
+
+/***********************************************
+Video
+***********************************************/
+.title-article.video-t {
+  height: 50px;
+  line-height: 50px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  @include breakpoint($medium) {
+    margin-top: -8px;
+  }
+  @include breakpoint($large) {
+    height: 65px;
+    line-height: 65px;
+    margin-top: -5px;
+    margin-bottom: 0;
+  }
+}
+
+.title-article.video-t {
+  font-size: 20px;
+  color: #505d83;
+}
+
+.title-article.video-t.sp-video {
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    margin-top: -5px;
+  }
+  @include breakpoint($large) {
+   // margin-bottom: 20px;
+  }
+
+}
+
+.video-play {
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 2px;
+  @include breakpoint($large) {
+    width: 50px;
+    height: 50px;
+    top: -11px;
+  }
+}
+
+#video-sek {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+#video-sek .fotorama {
+  height: 100%;
+}
+
+.video-play svg {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.pl-svg {
+  fill: #505d83;
+  @extend .transition-all;
+}
+
+.st-svg {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgba(255, 255, 255, 0);
+  @extend .transition-all;
+}
+
+.video-play.active .st-svg {
+  fill: #505d83;
+  stroke: #505d83;
+}
+
+.video-play.active .pl-svg {
+  fill: rgba(255, 255, 255, 0);
+}
+
+#video-sek .fotorama__video {
+  top: 0;
+}
+
+/*#video-sek .fotorama__img {
+  max-width: 80%;
+  height: auto;
+}*/
+
+.fotorama__video-close {
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  top: -35px;
+  right: 0;
+  z-index: 20;
+  opacity: 0;
+}
+
+#video-sek .fotorama__stage, #video-sek .fotorama {
+  overflow: visible;
+}
+
+/***********************************************
+Sinergin
+***********************************************/
+.ct-chart {
+  margin-bottom: 20px;
+}
+
+.chart-img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  max-width: 360px;
+}
+
+.img-tit-sin {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.txt-charts {
+  fill: #505465;
+}
+
+/***********************************************
+Сертификат Прием
+***********************************************/
+
+.special-article-footer p,.special-article-footer span{
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 7px;
+  margin-top: 5px;
+   @include breakpoint($small-min) {
+
+     }
+     @include breakpoint($medium) {
+   font-size: 20px;
+     }
+     @include breakpoint($large) {
+
+     }
+
+}
+.special-article-footer p,.special-article-footer span{
+  text-transform: uppercase;
+}
+.reception-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.row-clear{
+  height: 20px;
+
+     @include breakpoint($medium) {
+   height: 30px;
+     }
+     @include breakpoint($large) {
+      height: 40px;
+     }
+
+}
+/***********************************************
+TXT
+***********************************************/
+.small-note {
+  font-size: 90%;
+  opacity: 0.95;
+}
+
+.аttention-p {
+  font-size: 90%;
+}
+
+li p.small-note {
+  margin-bottom: 0;
+}
+
+.list-article li.list-st-none {
+  list-style: none;
+}
+
+/***********************************************
+Img Speroton
+***********************************************/
+.title-icon-problem {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  display: inline-block;
+  color: $color-hgroup;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-bottom: 5px;
+  // margin-left: 10px;
+  @extend .CompPro-Regulap;
+
+}
+
+.wr-all-icon-problem {
+  margin-top: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    padding-left: 15%;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.warn-wr-icon {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  margin: 25px 0 15px;
+  @extend .leare_fix;
+}
+
+.warn-wr-icon.lef-cen-warn {
+  margin-right: -20px;
+}
+
+.warn-wr-icon.cen-warn {
+  margin-left: -30px;
+}
+
+.item-icon-wr {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  text-align: left;
+}
+
+.img-icon-drugs {
+  position: relative;
+  display: inline-block;
+  max-width: 80px;
+  margin: 0 auto;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    max-width: 90px;
+  }
+  @include breakpoint($large-xl) {
+    max-width: 100px;
+  }
+}
+
+.bef-after-img {
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  float: left;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.bef-after-img::after, .bef-after-img::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 1px;
+  background: $color-line-txt;
+}
+
+.bef-after-img::after {
+  left: 4px;
+}
+
+.bef-after-img::before {
+  right: 4px;
+}
+
+.left-icon-note, .right-icon-note {
+  position: relative;
+  color: $bg-header-menu;
+  font-size: 16px;
+  line-height: 1;
+  float: left;
+  margin: 0;
+}
+
+/***********************************************
+List Img Pregnoton
+***********************************************/
+.wr-fc {
+  width: 100%;
+  margin-bottom: 10px;
+  @extend .leare_fix;
+}
+
+.wr-fc img {
+  float: left;
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.first-wr-fc {
+  margin-top: 10px;
+}
+
+.desc-fc {
+  display: block;
+}
+
+/***********************************************
+Animate Img Old
+***********************************************/
+#human-woman-img {
+  @include scale(0.94);
+  @extend .transition-transform;
+}
+
+#human-woman-img.view-active {
+  @include scale(1);
+}
+
+/***********************************************
+TXT
+***********************************************/
+.title-h5 {
+  font-size: 18px;
+  color: $color-hgroup;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 19px;
+  }
+  @include breakpoint($large) {
+    font-size: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+Charts
+***********************************************/
+.mar-charts {
+  margin-bottom: 30px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.sub_charts {
+  font-size: 1.15em;
+  color: #3e414e;
+  font-family: PFDinTextCompProRegular, sans-serif;
+  //@extend .pt-sans-narrow;
+  letter-spacing: .5px;
+  line-height: 1.1;
+  // text-transform: uppercase;
+  text-shadow: 0 0 0;
+  // @extend .easy-txt;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 1.3em;
+  }
+  @include breakpoint($large) {
+    //font-size: 1.4em;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+
+}
+
+.bl-p-ch {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: -5px;
+  font-size: 1.2em;
+  line-height: 1.1;
+  color: #3e414e;
+  text-shadow: 0 0 0;
+  letter-spacing: .5px;
+  font-family: PFDinTextCompProRegular, sans-serif;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    margin-top: 25px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.fr-t {
+  margin-top: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    margin-top: 20px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.img-charts {
+  //text-align: center;
+  width: 100%;
+  margin: 20px 0 15px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 2px;
+  @include breakpoint($small-min) {
+   // width: 95%;
+  }
+  @include breakpoint($small) {
+   // width: 90%;
+  }
+  @include breakpoint($medium) {
+   // width: 100%;
+  }
+  @include breakpoint($large) {
+    width: 75%;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+.img-charts-note.img-charts{
+   @include breakpoint($small-min) {
+
+     }
+     @include breakpoint($medium) {
+
+     }
+     @include breakpoint($large) {
+      width: 85%;
+     }
+
+}
+.img-charts-note .note-p-charts{
+  margin-bottom: 5px;
+   @include breakpoint($small-min) {
+
+     }
+     @include breakpoint($medium) {
+
+     }
+     @include breakpoint($large) {
+      margin-bottom: 20px;
+     }
+  @include breakpoint($large-xl) {
+    margin-bottom: 30px;
+  }
+}
+.img-charts svg{
+  width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+}
+.table-charts {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @include breakpoint($small-min) {
+   // width: 100%;
+  }
+  @include breakpoint($small) {
+    //width: 90%;
+  }
+  @include breakpoint($medium) {
+    margin-top: 30px;
+    //width: 100%;
+  }
+  @include breakpoint($large) {
+    width: 70%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+.table-charts .note-p-charts{
+  margin-top: -10px;
+}
+.table-charts table{
+  width: 100%;
+  margin-top: 15px;
+}
+.note-p-charts,#note-charts .note-p-charts{
+  width: 100%;
+  font-size: .75em;
+  opacity: .9;
+  margin-bottom: 25px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    width: 80%;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    width: 70%;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+.note-drugs{
+  display: table;
+padding: 20px;
+  margin: 10px 0 20px;
+  background: #fff;
+     @include breakpoint($medium) {
+       padding: 30px;
+       border-radius: 2px;
+       margin-bottom: 0;
+     }
+     @include breakpoint($large) {
+
+     }
+
+
+}
+.note-drugs p{
+  font-size: 120%;
+  color: #333b54;
+}
+.chart-item-img {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+}
+
+.text-padding {
+  padding-top: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    padding-top: 15px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+p.last-chart {
+  margin-top: 20px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    margin-top: 25px;
+  }
+  @include breakpoint($large) {
+    margin-top: 30px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+sin-compar
+***********************************************/
+#sin-compar p {
+  margin-bottom: 10px;
+}
+
+#sin-compar p b {
+  font-weight: 500;
+  text-shadow: 0 0 0;
+  font-family: PTSansNarrowRegular, sans-serif;
+}
+
+#sin-compar .list-article li {
+  margin-bottom: 3px;
+}

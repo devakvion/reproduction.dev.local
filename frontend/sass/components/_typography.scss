@@ -1,0 +1,159 @@
+
+h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+
+}
+
+h1, span, h2, h3, h4, h5, h6 {
+  position: relative;
+  margin-top: 0;
+}
+
+span {
+  margin-bottom: 0;
+  display: inline-block;
+}
+.disp-block{
+  display: block;
+}
+p {
+  display: block;
+  line-height: 1.4;
+  color: $color-primary;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  @extend .pt-sans-narrow;
+  @include breakpoint($small-min) {
+    //font-size: 16px;
+  }
+  @include breakpoint($large) {
+    font-size: 17px;
+  }
+}
+
+.title-section {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1;
+ // color: $color-hgroup;
+  color: #465489;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small-min) {
+    font-size: 24px;
+  }
+  @include breakpoint($medium) {
+    font-size: 26px;
+  }
+  @include breakpoint($large) {
+    font-size: 28px;
+  }
+  @include breakpoint($large-xl) {
+    font-size: 30px;
+  }
+}
+
+.after-line::after {
+  @extend .after-line-100;
+}
+
+.title-problem-header, .title-slider-left {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 5px;
+  @include breakpoint($small-min) {
+    font-size: 29px;
+  }
+  @include breakpoint($small) {
+    font-size: 32px;
+  }
+  @include breakpoint($medium) {
+    font-size: 38px;
+  }
+  @include breakpoint($large) {
+    font-size: 43px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/*.title-slider-left {
+  @include breakpoint($large-xl) {
+    font-size: 49px;
+  }
+}*/
+.num-b{
+  font-weight: bold;
+  @extend .CompPro-Regulap;
+  font-size: 18px;
+  margin-right: 2px;
+}
+.title-article {
+  display: inline-block;
+  color: $color-hgroup;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 4px;
+  line-height: 1.1;
+  letter-spacing: .5px;
+  text-align: left;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small-min) {
+    font-size: 22px;
+  }
+  @include breakpoint($small) {
+    font-size: 23px;
+  }
+  @include breakpoint($medium) {
+   // margin-bottom: 20px;
+    font-size: 25px;
+  }
+  @include breakpoint($large) {
+    font-size: 25px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+#header-top h3{
+  line-height: 1;
+  color: lighten($color-hgroup,8%);
+  font-size: 18px;
+  @include breakpoint($small-min) {
+    font-size: 19px;
+  }
+  @include breakpoint($large) {
+    font-size: 23px;
+  }
+
+}
+p b{
+  color: $color-hgroup;
+  font-weight: 500;
+}
+b{
+  color: $color-hgroup;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    font-size: 17px;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}

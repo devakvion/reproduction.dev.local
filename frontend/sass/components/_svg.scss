@@ -1,0 +1,74 @@
+.wr-human {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  @include breakpoint($large) {
+    max-width: 620px;
+  }
+}
+
+.human-svg,.human-svg svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.human-svg{
+  opacity: 0;
+ transition: opacity .5s;
+}
+ .human-svg.active{
+  opacity: 1;
+}
+/***********************************************
+Problem SVG
+***********************************************/
+.wr-svg-article img.full-img{
+  opacity: 0;
+}
+.wr-svg-article svg{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @extend .transition-all;
+}
+.wr-svg-article.active svg{
+  opacity: 1;
+}
+/*.wr-svg-article .gr-m{
+  transform: scale(1.1);
+  transform-origin: center 25%;
+}*/
+/***********************************************
+New
+***********************************************/
+
+#human-section .m-item,#human-section .w-item{
+  stroke: #999999;
+  @extend .transition-all;
+}
+#human-section .gr-m{
+  transform: scale(.95);
+  @extend .transition-all;
+}
+#human-section .w-org:hover .gr-m,#human-section .m-org:hover .gr-m, #human-section .m-org.active .gr-m,#human-section .w-org.active .gr-m{
+  transform: scale(1);
+}
+#human-section .m-org:hover .m-item,#human-section .m-org.active .m-item{
+  stroke: #3f6ad7;
+}
+#human-section .w-org:hover .w-item,#human-section .w-org.active .w-item{
+  stroke: #FD5368;
+}
+.blur{
+  @extend .transition-all;
+}
+#human-section .m-org:hover .blur,#human-section .w-org:hover .blur,#human-section .w-org.active .blur,#human-section .m-org.active .blur{
+  opacity: 1;
+}

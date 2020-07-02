@@ -1,0 +1,17 @@
+iframe.mibew-chat-frame {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 1px solid #cfcfcf;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 510px;
+  height: 480px;
+  overflow: hidden;
+  z-index: 1000;
+  border-radius: 2px;
+  background: url("/support/styles/chats/reproduction/images/ajax-loader.gif") center center no-repeat #f1f2f2;
+  @include box-shadow-2(0 2px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 5px 0 rgba(0, 0, 0, 0.10));
+
+}

@@ -1,0 +1,321 @@
+#footer-rep {
+  color: $color-footer-darken;
+  position: relative;
+  letter-spacing: 0.5px;
+  @extend .CompPro-Regulap;
+}
+
+.bg-f {
+  background: $bg-header-menu;
+}
+
+.c-f {
+  overflow: hidden;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 35px 0 60px;
+  @include breakpoint($small-min) {
+    max-width: 380px;
+  }
+  @include breakpoint($small) {
+    max-width: 460px;
+  }
+  @include breakpoint($medium) {
+    width: 93%;
+    max-width: $max-width-container;
+    padding: 45px 0 70px;
+  }
+  @include breakpoint($large) {
+    padding: 50px 0 70px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+//
+.c-f-bot {
+  padding: 0 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: $color-footer-darken;
+  @extend .BebasNeueBold;
+  @include breakpoint($medium) {
+    padding: 0 40px;
+  }
+  @include breakpoint($large) {
+    padding: 0 50px;
+  }
+}
+
+#footer-rep i {
+  margin-right: 5px;
+}
+
+#footer-rep .reproduction-email {
+  font-size: 11px;
+  vertical-align: baseline;
+}
+
+#footer-rep .reproduction-addres {
+  font-size: 14px;
+  vertical-align: baseline;
+  padding-right: 2px;
+}
+
+#footer-rep .reproduction-chat {
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
+#footer-rep .chat-footer {
+  margin-top: -4px;
+}
+
+#footer-rep .reproduction-reviews {
+  font-size: 16px;
+  vertical-align: bottom;
+}
+
+#footer-rep .l-foot-sm{
+ display: inline-block;
+  margin-right: 8px;
+  margin-top: -3px;
+  width: 15px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+#footer-rep .reproduction-phone-help {
+  font-size: 13px;
+}
+.politic-i{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  font-size: 0;
+  line-height: 1;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/politic/politics .svg");
+}
+
+.footer-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: darken($bg-header-menu, 5%);
+}
+
+
+.wr-footer-txt {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.footer-block1, .footer-block2, .footer-block3 {
+  text-align: left;
+  margin: 0 auto;
+  @include breakpoint($medium) {
+    text-align: center;
+    padding: 0 20px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.footer-block1 {
+  height: 100%;
+  @include grid-span(12, 1);
+  @include breakpoint($small-min) {
+    @include grid-span(6, 1);
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    @include grid-span(4, 1);
+    border-right: 1px solid darken($color-footer-darken, 35%);
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.footer-block2 {
+  height: 100%;
+  @include grid-span(12, 1);
+  @include breakpoint($small-min) {
+    @include grid-span(6, 7);
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    @include grid-span(4, 5);
+    border-right: 1px solid darken($color-footer-darken, 35%);
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.footer-block3 {
+  @include grid-span(12, 1);
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    @include grid-span(4, 9);
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+#footer-rep .title-footer,#footer-rep .foot-a{
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $color-footer;
+  line-height: 1;
+  margin-bottom: 15px;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  @extend .CompPro-Regulap;
+  @include breakpoint($large) {
+    margin-bottom: 18px;
+  }
+
+}
+#footer-rep .title-footer.t-fot-con-up{
+  margin-bottom: 14px;
+}
+#footer-rep .foot-a.a-cont-foot{
+  margin-bottom: 0;
+  padding-bottom: 2px;
+}
+.title-footer::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background: darken($color-footer-darken, 30%);
+}
+
+.txt-footer {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 7px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: $color-footer-darken;
+  @extend .BebasNeueBold;
+}
+
+#footer-rep a {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 7px;
+  display: block;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  color: $color-footer-darken;
+  @extend .BebasNeueBold;
+  @extend .transition-all;
+}
+
+#footer-rep a:hover {
+  text-decoration: underline;
+  color: $color-footer;
+
+}
+
+#footer-rep address {
+  font-style: normal;
+  margin-bottom: 0;
+  line-height: 1.3;
+  @include breakpoint($medium) {
+    font-size: 12px;
+  }
+  @include breakpoint($large) {
+    font-size: 13px;
+  }
+  @include breakpoint($large-xl) {
+    font-size: 14px;
+  }
+}
+
+#footer-rep .footer-block3 .last-phone {
+  margin-bottom: 7px;
+}
+
+.footer-last-block {
+  @include breakpoint($medium) {
+    padding-left: 10px;
+  }
+  @include breakpoint($large) {
+    padding-left: 30px;
+  }
+}
+.seo-foot{
+  display: none;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    margin-right: 20px;
+  display: inline-block;
+  }
+  @include breakpoint($large) {
+    margin-right: 30px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}

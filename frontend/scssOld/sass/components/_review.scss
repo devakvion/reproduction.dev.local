@@ -1,0 +1,621 @@
+@charset "UTF-8";
+/***********************************************
+Section Comments
+***********************************************/
+.bg-header-top-review {
+  background: url("/img/review/otzivi_new.jpg") no-repeat;
+  background-position: 69% 50%;
+  background-size: cover;
+  @extend .transition-all;
+  @include breakpoint($small-min) {
+    background-position: 60% 50%;
+  }
+  @include breakpoint($small) {
+    background-position: center;
+  }
+
+}
+
+.bg-header-top-review .left-header {
+  margin-top: 120px;
+  @include breakpoint($small-min) {
+    margin-top: 130px;
+  }
+  @include breakpoint($small) {
+    margin-top: 150px;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+    margin-top: 170px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.comment {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.comments-btn-f {
+  margin-top: 20px;
+}
+
+.comment-img {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.comment-img img {
+  display: block;
+  width: 45px;
+  @include breakpoint($medium) {
+    width: 80px;
+  }
+}
+
+.comment-img img.user-woman {
+  padding: 0 4px;
+}
+
+.comment-body {
+  overflow: hidden;
+  padding-bottom: 20px;
+  @include breakpoint($medium) {
+    padding-bottom: 30px;
+  }
+  @include breakpoint($large) {
+    padding-bottom: 35px;
+  }
+}
+
+.comment-title {
+  display: inline-block;
+  text-transform: uppercase;
+  @extend .CompPro-Regulap;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  color: lighten($bg-header-menu, 5%);
+
+}
+
+.comment-title span {
+  position: relative;
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 2px;
+  display: inline-block;
+}
+
+.comment-title span::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: $color-line-txt;
+}
+
+.review-p {
+  display: block;
+  font-size: 17px;
+  margin: 10px 0;
+  color: $color-primary;
+}
+
+.comment-title img {
+  vertical-align: middle;
+  width: 30px;
+  height: auto;
+}
+
+.comment-title .speroton-com-img {
+  height: 15px;
+  width: auto;
+}
+
+.comment .text {
+  padding: 20px 36px;
+  border: 1px solid darken(#fff, 12%);
+  border-radius: 3px;
+  background: darken(#fff, 0.4%);
+}
+
+.comment .text.text-bg-c {
+  background: #fff;
+}
+
+.comment .text i {
+  color: #b6b4b5;
+  font-size: 12px;
+  display: block;
+  margin-left: -10px;
+}
+
+.text .reproduction-quotes-2 {
+  text-align: right;
+  height: 0;
+  overflow: visible;
+}
+
+.comment .text p:last-child {
+  margin: 0;
+}
+
+.comment .attribution {
+  width: 100%;
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: $color-primary;
+  line-height: 23px;
+  height: 23px;
+}
+
+.comment-name, .comment-date {
+  padding-left: 3px;
+  padding-right: 4px;
+  font-weight: normal;
+  font-size: 16px;
+  color: $color-hgroup;
+  @extend .CompPro-Regulap;
+}
+
+.comment-date {
+  padding-top: 2px;
+  float: right;
+
+}
+
+/* Decoration */
+
+.comments {
+  position: relative;
+  margin: 0 auto;
+}
+
+.comment {
+  position: relative;
+}
+
+.comments:before, .comment:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 64px;
+  @include breakpoint($medium) {
+    left: 105px;
+  }
+}
+
+.comments:before {
+  @include breakpoint($small) {
+    width: 2px;
+    top: 20px;
+    bottom: 205px;
+    background: lighten($bg-header-menu, 45%);
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.comment:before {
+  @include breakpoint($small) {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin: 14px 0 0 -7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: lighten($color-hover-menu, 20%);
+  }
+  @include breakpoint($medium) {
+
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.comment:hover:before {
+  background: $color-hover-menu;
+}
+
+.comment .text::before {
+  @include breakpoint($small) {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 77px;
+    width: 16px;
+    height: 16px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: darken(#fff, 12%);
+    background: darken(#fff, 0.4%);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  @include breakpoint($medium) {
+    left: 122px;
+  }
+}
+
+.comment .text.text-bg-c::before {
+  background: #fff;
+}
+
+.comment-title .reproduction-drugs-logo {
+  position: relative;
+  margin-right: 3px;
+}
+
+/***********************************************
+Modal
+***********************************************/
+.btn.modal-btn.btn-slider {
+  padding-right: 20px;
+  margin-top: 7px;
+  @include breakpoint($small-min) {
+    margin-top: 20px;
+  }
+  @include breakpoint($small) {
+    padding-right: 25px;
+  }
+  @include breakpoint($medium) {
+    margin-top: 25px;
+  }
+  @include breakpoint($large) {
+    padding-right: 30px;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+/***********************************************
+Form
+***********************************************/
+.remodal input {
+  width: 100%;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: $color-primary;
+  @extend .pt-sans-narrow;
+  border: 1px solid lighten($color-line-txt, 15%);
+  outline: none;
+  // @extend .transition-all;
+}
+
+.remodal input:focus, .remodal input:hover,
+.remodal input:active,
+.remodal .form-group textarea:active,
+.remodal .form-group textarea:hover,
+.remodal .form-group textarea:focus {
+  border: 1px solid $color-line-txt;
+}
+
+.field-commentform-img {
+  overflow: hidden;
+  width: 100%;
+  //margin-bottom: 10px;
+
+}
+
+.comment-upload-img-small {
+  display: inline-block;
+  float: left;
+  width: 50px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.remodal .form-group textarea {
+  width: 100%;
+  border: 1px solid lighten($color-line-txt, 15%);
+  padding: 8px 15px;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: $color-primary;
+  @extend .pt-sans-narrow;
+  outline: none;
+}
+
+.btn-dl {
+  display: inline-block;
+  padding: 12px 25px 14px;
+  @extend .transition-all;
+  color: #fff;
+  font-size: 16px;
+  float: left;
+}
+
+.col-ok-dl {
+  background: $color-hover-menu;
+  margin-right: 20px;
+  border: 1px solid darken($color-hover-menu, 5%);
+}
+
+.col-ok-dl:hover, .col-ok-dl:focus {
+  background: $color-hover-menu-active;
+}
+
+.col-del-dl {
+  background: #e57373;
+  border: 1px solid darken(#e57373, 5%);
+}
+
+.col-del-dl:hover, .col-del-dl:focus {
+  background: #ef5350;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: darken(#F7F7F7, 10%);
+  padding: 14px 30px 13px;
+  color: $color-hgroup;
+  font-size: 16px;
+  border: 1px solid darken(#F7F7F7, 12%);
+  @extend .CompPro-Regulap;
+  @extend .transition-all;
+}
+
+.btn-primary:hover {
+  background: darken(#F7F7F7, 18%);
+  border: 1px solid darken(#F7F7F7, 20%);
+}
+
+#response-wr {
+  font-size: 16px;
+  text-align: left;
+}
+
+//#81c784
+#response-wr.error-sent {
+  color: #e57373;
+}
+
+#response-wr.success-sent {
+  color: #81c784;
+}
+
+#commentform-product,#faqform-product {
+  width: 100%;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: $color-primary;
+  @extend .pt-sans-narrow;
+  border: 1px solid lighten($color-line-txt, 15%);
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/***********************************************
+СОГЛАСИЕ посетителя сайта на обработку персональных данных
+***********************************************/
+$bg-visit: #5f8fce;
+$font-visit: 'PTSansNarrowRegular', sans-serif;
+$font-visit-tlt: 'BebasNeueBold';
+$color-visit: #64697c;
+$bg-send-bt: #4382d6;
+.note-form-top{
+  text-align: left;
+}
+.remodal h4 {
+  /*font-size: 1.3em;*/
+  margin-top: 25px;
+  margin-bottom: 35px;
+  max-width: 550px;
+  text-align: center;
+ /* line-height: 1.15;
+  max-width: 550px;
+  font-family: $font-visit-tlt;
+  color: #3c3e4b;*/
+}
+.logo-interview{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top: 20px;
+}
+.logo-interview img{
+  width: 100%;
+  height: auto;
+}
+#consent-visitor {
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#consent-visitor a.bt-pos-vis {
+  vertical-align: middle;
+  color: $color-visit;
+  font-size: .95em;
+  position: absolute;
+  left: 27px;
+  top: 0;
+  text-decoration: underline;
+  display: block;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+  font-weight: 400;
+  // pointer-events: none;
+  font-family: $font-visit;
+  @include breakpoint($small-min) {
+    // font-size: 0.9em;
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 1em;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+#consent-visitor a.bt-pos-vis i {
+  display: inline-block;
+  vertical-align: middle;
+  //color: #ed7c7f;
+}
+
+#consent-visitor span {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  transform-origin: center;
+  border: 1px solid #b5b5b5;
+  border-radius: 2px;
+  vertical-align: -4px;
+  // margin-right: 8px;
+  //transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+  transition: all 350ms;
+  clear: both;
+}
+
+#consent-visitor input[type="checkbox"]:hover + span, #consent-visitor input[type="radio"]:hover + span {
+  border-color: #787878;
+}
+
+#consent-visitor span:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #5f8fce;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 7px;
+  left: 3px;
+  transition: width 50ms ease 50ms;
+  transform-origin: 0 0;
+}
+
+#consent-visitor span:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #5f8fce;
+  position: absolute;
+  transform: rotate(305deg);
+  top: 12px;
+  left: 5px;
+  transition: width 50ms ease;
+  transform-origin: 0 0;
+}
+
+/*label:hover span:before {
+  width: 5px;
+  transition: width 100ms ease;
+}
+label:hover span:after {
+  width: 10px;
+  transition: width 150ms ease 100ms;
+}*/
+
+#consent-visitor input[type="checkbox"], #consent-visitor input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 100%;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+  //display: none;
+  cursor: pointer;
+}
+
+#consent-visitor input[type="checkbox"]:checked + span, #consent-visitor input[type="radio"]:checked + span,
+#consent-visitor input[type="checkbox"].active + span{
+  background-color: #5f8fce;
+  border-color: #5f8fce;
+  //transform: scale(1.25);
+}
+
+#consent-visitor input[type="checkbox"]:checked + span:after, #consent-visitor input[type="radio"]:checked + span:after,
+#consent-visitor input[type="checkbox"].active + span:after{
+  width: 11px;
+  background: #fff;
+  transition: width 150ms ease 100ms;
+}
+
+#consent-visitor input[type="checkbox"]:checked + span:before, #consent-visitor input[type="radio"]:checked + span:before,
+#consent-visitor input[type="checkbox"].active + span:before{
+  width: 6px;
+  background: #fff;
+  transition: width 150ms ease 100ms;
+}
+
+.wr-visit-btn{
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.remodal-confirm-in-r{
+  background: #fff;
+}
+.remodal-cancel-in-l{
+ //background: $bg-send-bt;
+}
+.remodal-confirm-in-r{
+  background: $bg-send-bt;
+}
+.remodal-confirm-in-r:hover{
+  background: darken($bg-send-bt ,3%);
+}

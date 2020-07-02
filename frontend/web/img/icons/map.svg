@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="75px" viewBox="0 0 56 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
+    <title>map</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="map" sketch:type="MSLayerGroup" fill="#000000">
+            <g id="Group" sketch:type="MSShapeGroup">
+                <path d="M27.714,0.751 C12.445,0.751 0.072,13.124 0.072,28.39 C0.072,47.093 13.892,56.249 27.714,75.045 C41.528,56.249 55.349,47.093 55.349,28.39 C55.349,13.124 42.975,0.751 27.714,0.751 L27.714,0.751 Z M27.714,40.301 C21.132,40.301 15.798,34.968 15.798,28.389 C15.798,21.81 21.132,16.477 27.714,16.477 C34.289,16.477 39.623,21.809 39.623,28.389 C39.622,34.968 34.289,40.301 27.714,40.301 L27.714,40.301 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

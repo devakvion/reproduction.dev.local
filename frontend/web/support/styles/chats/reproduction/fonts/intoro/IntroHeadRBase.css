@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'IntroHeadRBase';
+    src: url('fonts/IntroHeadRBase.eot');
+    src: url('fonts/IntroHeadRBase.eot') format('embedded-opentype'),
+         url('fonts/IntroHeadRBase.woff2') format('woff2'),
+         url('fonts/IntroHeadRBase.woff') format('woff'),
+         url('fonts/IntroHeadRBase.ttf') format('truetype'),
+         url('fonts/IntroHeadRBase.svg#IntroHeadRBase') format('svg');
+}

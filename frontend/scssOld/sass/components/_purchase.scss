@@ -1,0 +1,227 @@
+/***********************************************
+BG
+***********************************************/
+.bg-header-purchase {
+  background: url("/img/purchase/purchase.jpg") no-repeat;
+  background-position: 60% 50%;
+  background-size: cover;
+  @extend .transition-all;
+  @include breakpoint($small-min) {
+    background-position: 60% 50%;
+  }
+  @include breakpoint($small) {
+    background-position: center;
+  }
+}
+
+/***********************************************
+Animate
+***********************************************/
+.block-filter.active{
+  -webkit-animation-duration: 1s;
+  animation-duration:1s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn-li;
+  animation-name: fadeIn-li;
+}
+
+.block-filter{
+  -webkit-animation-duration: 1s;
+  animation-duration:1s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn-li;
+  animation-name: fadeIn-li;
+}
+
+@-webkit-keyframes fadeIn-li {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn-li {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/***********************************************
+Logo
+***********************************************/
+.logo-pharmacy {
+  display: inline-block;
+  float: left;
+  margin-right: 7px;
+  position: relative;
+  width: auto;
+  vertical-align: middle;
+  height: 23px;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    height: 28px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.t-pharmacy {
+  color: $bg-header-menu;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.5px;
+  @extend .CompPro-Regulap;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    font-size: 22px;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+.t-pharmacy span {
+  padding-top: 7px;
+  margin: 0;
+  line-height: 1;
+}
+
+.t-pharmacy:hover img {
+
+}
+
+/***********************************************
+Ul
+***********************************************/
+#pharmacy .list, #pharmacy .list li {
+  display: inline-block;
+}
+#pharmacy .list {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+  text-align: left;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+#pharmacy .list li {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: 1px solid darken(#fff, 10%);
+  margin: 0 10px 20px 0;
+  background: #fff;
+  @extend .transition-all;
+@include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    margin: 0 20px 30px 0;
+  }
+  @include breakpoint($large) {
+
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+#pharmacy .list > li:not(.t-not-logo):hover {
+  @include box-shadow-2(0 2px 4px 0 rgba(0, 0, 0, 0.10), 0 2px 8px 0 rgba(0, 0, 0, 0.08));
+  border: 1px solid darken(#fff, 27%);
+}
+
+#pharmacy li.t-not-logo {
+  display: block;
+  padding: 0;
+  width: 100%;
+  border: none;
+  background: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/***********************************************
+Search
+***********************************************/
+/*.hide-pharmacy{
+  opacity: .5;
+}*/
+.search-pharmacy {
+  display: inline-block;
+  width: 300px;
+  padding: 9px 15px;
+  font-size: 18px;
+  color: $color-primary;
+}
+
+/***********************************************
+Filter
+***********************************************/
+#search-purchase {
+  min-width: 250px;
+  width: auto;
+  height: 36px;
+  color: $color-primary;
+  font-size: 20px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+  @extend .pt-sans-narrow;
+  @include breakpoint($small-min) {
+
+  }
+  @include breakpoint($small) {
+
+  }
+  @include breakpoint($medium) {
+    margin-top: -10px;
+  }
+  @include breakpoint($large) {
+    min-width: 300px;
+    width: auto;
+  }
+  @include breakpoint($large-xl) {
+
+  }
+}
+
+#search-purchase:focus, #search-purchase:active, #search-purchase:hover {
+  border-color: $color-line-txt;
+}

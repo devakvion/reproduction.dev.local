@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="99px" height="100px" viewBox="0 0 99 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>woman</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="woman" sketch:type="MSLayerGroup" transform="translate(1.133547, 1.961538)" stroke="#A58D75" stroke-width="2">
+            <g id="Shape-+-Shape-+-Shape" transform="translate(28.000000, 20.000000)" sketch:type="MSShapeGroup">
+                <path d="M19.9403232,40.3775255 C30.8982422,40.3775255 39.7813907,31.4932032 39.7813907,20.5338363 C39.7813907,9.57446929 30.8982422,0.690146979 19.9403232,0.690146979 C8.98240414,0.690146979 0.0992555831,9.57446929 0.0992555831,20.5338363 C0.0992555831,31.4932032 8.98240414,40.3775255 19.9403232,40.3775255 L19.9403232,40.3775255 Z" id="Shape"></path>
+                <path d="M19,40.3775255 L19,59.3943944" id="Shape"></path>
+                <path d="M10.433145,48 L29.4475014,48" id="Shape"></path>
+            </g>
+            <circle id="Oval-7" sketch:type="MSShapeGroup" cx="48.0769231" cy="48.0769231" r="48.0769231"></circle>
+        </g>
+    </g>
+</svg>

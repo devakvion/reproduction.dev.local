@@ -1,0 +1,124 @@
+.wr-human {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  @include breakpoint($large) {
+    max-width: 620px;
+  }
+}
+
+#human-svg,#human-svg svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+#mobile .item-group.opacity-group .wr-item-circle {
+  opacity: .3;
+}
+
+#mobile .item-group .wr-item-circle {
+  opacity: 0.6;
+}
+
+.item-group.opacity-group .wr-item-circle {
+  opacity: 0.6;
+}
+
+.item-group .wr-item-circle {
+  fill: $color-hover-menu;
+  stroke: none;
+  opacity: 0.7;
+  @extend .transition-opacity;
+}
+
+.item-group.active .wr-item-circle {
+  opacity: 0.8;
+}
+
+.human-item-circle {
+  fill: $color-women-human;
+  stroke: none;
+}
+
+.human-stroke-item {
+  fill: none;
+  stroke: $color-women-human;
+  stroke-width: 1px;
+}
+
+.women-fill {
+  fill: lighten($color-women-human, 10%);
+  stroke: none;
+}
+
+.human-fill-organ-bac {
+  fill: #ffffff;
+  stroke: none;
+}
+
+.human-fill-organ {
+  fill: rgba(255, 255, 255, 0);
+  stroke: lighten($color-women-human, 25%);
+  stroke-width: 1.2px;
+}
+
+.human-stroke-organ {
+  fill: none;
+  stroke: $color-beige;
+  stroke-width: 1.2px;
+}
+
+.human-active-organ {
+  stroke: $color-women-human;
+  fill: none;
+  stroke-width: 1.4px;
+}
+
+.item-group.active .human-stroke-item {
+  stroke-width: 1.2px;
+}
+
+.item-group.active .human-fill-organ {
+  stroke: lighten($color-women-human, 15%);
+  stroke-width: 1.8px;
+}
+
+.item-group.active .human-active-organ.men {
+  stroke: $color-hover-menu;
+  stroke-width: 1.9px;
+}
+
+.item-group.active .human-active-organ.women {
+  stroke: $color-women-health;
+  stroke-width: 1.9px;
+}
+
+.item-group.active .human-stroke-organ {
+  stroke: darken($color-beige, 5%);
+  stroke-width: 1.4px;
+}
+
+.human-stroke-organ, .human-active-organ, .human-fill-organ, .human-stroke-item {
+  -moz-transform-origin: center center;
+  transform-origin: center center;
+  @extend .translate3d;
+  @extend .transition-color;
+}
+
+.item-group {
+  opacity: 1;
+  @extend .transition-opacity;
+}
+
+.item-group.opacity-group {
+  opacity: 0.8;
+}
+/***********************************************
+New
+***********************************************/
+
