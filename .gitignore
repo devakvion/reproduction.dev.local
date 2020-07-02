@@ -1,3 +1,13 @@
 .idea
+vendor
 reproduction.info.txt
+composer.lock
+robots.txt
+frontend/config.rb
+frontend/gulpfile.js
+frontend/web/index-test.php
+frontend/web/robots.txt
+frontend/web/zip
+frontend/web/jsIe
+
 
